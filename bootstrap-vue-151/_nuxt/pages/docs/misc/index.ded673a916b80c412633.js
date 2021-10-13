@@ -1,0 +1,2 @@
+webpackJsonp([10],{"5p2X":function(e,t,c){"use strict";var n=function(){var e=this.$createElement;return(this._self._c||e)("div")};n._withStripped=!0;var i={render:n,staticRenderFns:[]};t.a=i},A6yc:function(e,t,c){"use strict";t.a={fetch:function(e){(0,e.redirect)("/docs/misc/changelog")}}},J905:function(e,t,c){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=c("A6yc"),i=c("5p2X"),s=c("VU/8")(n.a,i.a,!1,null,null,null);s.options.__file="docs/pages/docs/misc/index.vue",t.default=s.exports}});
+//# sourceMappingURL=index.ded673a916b80c412633.js.map

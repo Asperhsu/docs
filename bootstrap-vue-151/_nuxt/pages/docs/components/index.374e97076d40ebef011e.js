@@ -1,0 +1,2 @@
+webpackJsonp([13],{"8Pe4":function(e,t,n){"use strict";var s=function(){var e=this.$createElement;return(this._self._c||e)("div")};s._withStripped=!0;var c={render:s,staticRenderFns:[]};t.a=c},M7yt:function(e,t,n){"use strict";t.a={fetch:function(e){(0,e.redirect)("/docs/components/alert")}}},W8un:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s=n("M7yt"),c=n("8Pe4"),r=n("VU/8")(s.a,c.a,!1,null,null,null);r.options.__file="docs/pages/docs/components/index.vue",t.default=r.exports}});
+//# sourceMappingURL=index.374e97076d40ebef011e.js.map
