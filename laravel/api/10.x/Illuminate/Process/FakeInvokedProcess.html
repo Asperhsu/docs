@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Process\FakeInvokedProcess | Laravel API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.5/opensearch.xml"
+          title="Laravel API (5.5)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.8/opensearch.xml"
+          title="Laravel API (5.8)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/6.x/opensearch.xml"
+          title="Laravel API (6.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/7.x/opensearch.xml"
+          title="Laravel API (7.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/8.x/opensearch.xml"
+          title="Laravel API (8.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/9.x/opensearch.xml"
+          title="Laravel API (9.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/10.x/opensearch.xml"
+          title="Laravel API (10.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/master/opensearch.xml"
+          title="Laravel API (master)" />
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Process_FakeInvokedProcess" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select class="form-control" id="version-switcher" name="version">
+                                            <option
+                            value="../../../5.5/index.html"
+                            data-version="5.5" >Laravel 5.5</option>
+                                            <option
+                            value="../../../5.8/index.html"
+                            data-version="5.8" >Laravel 5.8</option>
+                                            <option
+                            value="../../../6.x/index.html"
+                            data-version="6.x" >Laravel 6.x</option>
+                                            <option
+                            value="../../../7.x/index.html"
+                            data-version="7.x" >Laravel 7.x</option>
+                                            <option
+                            value="../../../8.x/index.html"
+                            data-version="8.x" >Laravel 8.x</option>
+                                            <option
+                            value="../../../9.x/index.html"
+                            data-version="9.x" >Laravel 9.x</option>
+                                            <option
+                            value="../../../10.x/index.html"
+                            data-version="10.x" selected>Laravel 10.x</option>
+                                            <option
+                            value="../../../master/index.html"
+                            data-version="master" >Laravel Dev</option>
+                                    </select>
+            </form>
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Laravel API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                                        <li role="presentation" class="dropdown visible-xs-block visible-sm-block">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Versions&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li ><a href="../../../5.5/index.html" data-version="5.5">Laravel 5.5</a></li>
+                        <li ><a href="../../../5.8/index.html" data-version="5.8">Laravel 5.8</a></li>
+                        <li ><a href="../../../6.x/index.html" data-version="6.x">Laravel 6.x</a></li>
+                        <li ><a href="../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
+                        <li ><a href="../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
+                        <li ><a href="../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li class="active"><a href="../../../10.x/index.html" data-version="10.x">Laravel 10.x</a></li>
+                        <li ><a href="../../../master/index.html" data-version="master">Laravel Dev</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../Illuminate/Process.html">Process</a></li><li class="backslash">\</li><li>FakeInvokedProcess</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>FakeInvokedProcess    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>FakeInvokedProcess</strong>        implements        <a href="../../Illuminate/Contracts/Process/InvokedProcess.html"><abbr title="Illuminate\Contracts\Process\InvokedProcess">InvokedProcess</abbr></a>        (<a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_command">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$command</td>
+                <td class="last"><p>The command being faked.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_process">
+                                        protected                                        <a href="../../Illuminate/Process/FakeProcessDescription.html"><abbr title="Illuminate\Process\FakeProcessDescription">FakeProcessDescription</abbr></a>
+                                                                                
+                                    </td>
+                <td>$process</td>
+                <td class="last"><p>The underlying process description.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_receivedSignals">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$receivedSignals</td>
+                <td class="last"><p>The signals that have been received.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_remainingRunIterations">
+                                        protected                                        int|null
+                                                                                
+                                    </td>
+                <td>$remainingRunIterations</td>
+                <td class="last"><p>The number of times the process should indicate that it is &quot;running&quot;.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_outputHandler">
+                                        protected                                        callable|null
+                                                                                
+                                    </td>
+                <td>$outputHandler</td>
+                <td class="last"><p>The general output handler callback.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nextOutputIndex">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$nextOutputIndex</td>
+                <td class="last"><p>The current output's index.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nextErrorOutputIndex">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$nextErrorOutputIndex</td>
+                <td class="last"><p>The current error output's index.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(string $command, <a href="../../Illuminate/Process/FakeProcessDescription.html"><abbr title="Illuminate\Process\FakeProcessDescription">FakeProcessDescription</abbr></a> $process)
+        
+                                            <p><p>Create a new invoked process instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_id">id</a>()
+        
+                                            <p><p>Get the process ID if the process is still running.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_signal">signal</a>(int $signal)
+        
+                                            <p><p>Send a signal to the process.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasReceivedSignal">hasReceivedSignal</a>(int $signal)
+        
+                                            <p><p>Determine if the process has received the given signal.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_running">running</a>()
+        
+                                            <p><p>Determine if the process is still running.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_invokeOutputHandlerWithNextLineOfOutput">invokeOutputHandlerWithNextLineOfOutput</a>()
+        
+                                            <p><p>Invoke the asynchronous output handler with the next single line of output if necessary.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_output">output</a>()
+        
+                                            <p><p>Get the standard output for the process.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_errorOutput">errorOutput</a>()
+        
+                                            <p><p>Get the error output for the process.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_latestOutput">latestOutput</a>()
+        
+                                            <p><p>Get the latest standard output for the process.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_latestErrorOutput">latestErrorOutput</a>()
+        
+                                            <p><p>Get the latest error output for the process.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Console\Process\ProcessResult">ProcessResult</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_wait">wait</a>(callable $output = null)
+        
+                                            <p><p>Wait for the process to finish.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Illuminate/Contracts/Process/ProcessResult.html"><abbr title="Illuminate\Contracts\Process\ProcessResult">ProcessResult</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_predictProcessResult">predictProcessResult</a>()
+        
+                                            <p><p>Get the ultimate process result that wil be returned by this &quot;process&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withOutputHandler">withOutputHandler</a>(callable|null $outputHandler)
+        
+                                            <p><p>Set the general output handler for the fake invoked process.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L66">at line 66</a></div>
+        <code>                    void
+    <strong>__construct</strong>(string $command, <a href="../../Illuminate/Process/FakeProcessDescription.html"><abbr title="Illuminate\Process\FakeProcessDescription">FakeProcessDescription</abbr></a> $process)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new invoked process instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Illuminate/Process/FakeProcessDescription.html"><abbr title="Illuminate\Process\FakeProcessDescription">FakeProcessDescription</abbr></a></td>
+                <td>$process</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_id">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L77">at line 77</a></div>
+        <code>                    int|null
+    <strong>id</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the process ID if the process is still running.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_signal">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L90">at line 90</a></div>
+        <code>                    $this
+    <strong>signal</strong>(int $signal)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send a signal to the process.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$signal</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasReceivedSignal">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L105">at line 105</a></div>
+        <code>                    bool
+    <strong>hasReceivedSignal</strong>(int $signal)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the process has received the given signal.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$signal</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_running">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L115">at line 115</a></div>
+        <code>                    bool
+    <strong>running</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the process is still running.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_invokeOutputHandlerWithNextLineOfOutput">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L140">at line 140</a></div>
+        <code>            protected        array|false
+    <strong>invokeOutputHandlerWithNextLineOfOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Invoke the asynchronous output handler with the next single line of output if necessary.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_output">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L175">at line 175</a></div>
+        <code>                    string
+    <strong>output</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the standard output for the process.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_errorOutput">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L195">at line 195</a></div>
+        <code>                    string
+    <strong>errorOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the error output for the process.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_latestOutput">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L215">at line 215</a></div>
+        <code>                    string
+    <strong>latestOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the latest standard output for the process.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_latestErrorOutput">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L238">at line 238</a></div>
+        <code>                    string
+    <strong>latestErrorOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the latest error output for the process.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wait">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L262">at line 262</a></div>
+        <code>                    <abbr title="Illuminate\Console\Process\ProcessResult">ProcessResult</abbr>
+    <strong>wait</strong>(callable $output = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Wait for the process to finish.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Console\Process\ProcessResult">ProcessResult</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_predictProcessResult">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L286">at line 286</a></div>
+        <code>                    <a href="../../Illuminate/Contracts/Process/ProcessResult.html"><abbr title="Illuminate\Contracts\Process\ProcessResult">ProcessResult</abbr></a>
+    <strong>predictProcessResult</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the ultimate process result that wil be returned by this &quot;process&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/Contracts/Process/ProcessResult.html"><abbr title="Illuminate\Contracts\Process\ProcessResult">ProcessResult</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withOutputHandler">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Process/FakeInvokedProcess.php#L297">at line 297</a></div>
+        <code>                    $this
+    <strong>withOutputHandler</strong>(callable|null $outputHandler)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the general output handler for the fake invoked process.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|null</td>
+                <td>$outputHandler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

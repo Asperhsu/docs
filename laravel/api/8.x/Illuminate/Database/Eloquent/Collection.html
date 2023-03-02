@@ -43,6 +43,10 @@
           title="Laravel API (9.x)" />
     <link rel="search"
           type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/10.x/opensearch.xml"
+          title="Laravel API (10.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
           href="https://docs.asper.one/laravel/api/master/opensearch.xml"
           title="Laravel API (master)" />
     </head>
@@ -71,6 +75,9 @@
                                             <option
                             value="../../../../9.x/index.html"
                             data-version="9.x" >Laravel 9.x</option>
+                                            <option
+                            value="../../../../10.x/index.html"
+                            data-version="10.x" >Laravel 10.x</option>
                                             <option
                             value="../../../../master/index.html"
                             data-version="master" >Laravel Dev</option>
@@ -125,6 +132,7 @@
                         <li ><a href="../../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
                         <li class="active"><a href="../../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
                         <li ><a href="../../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li ><a href="../../../../10.x/index.html" data-version="10.x">Laravel 10.x</a></li>
                         <li ><a href="../../../../master/index.html" data-version="master">Laravel Dev</a></li>
                         </ul>
                     </li>
@@ -1319,7 +1327,7 @@
                 <div class="col-md-8">
                     <a href="#method_all">all</a>()
         
-                                            <p><p>Get all of the items in the collection.</p></p>                </div>
+                                            <p><p>Get all items in the enumerable.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_all">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1426,7 +1434,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffUsing">diffUsing</a>(mixed $items, callable $callback)
         
-                                            <p><p>Get the items in the collection that are not present in the given items, using the callback.</p></p>                </div>
+                                            <p><p>Get the items that are not present in the given items, using the callback.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_diffUsing">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1437,7 +1445,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffAssoc">diffAssoc</a>(mixed $items)
         
-                                            <p><p>Get the items in the collection whose keys and values are not present in the given items.</p></p>                </div>
+                                            <p><p>Get the items whose keys and values are not present in the given items.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_diffAssoc">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1448,7 +1456,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffAssocUsing">diffAssocUsing</a>(mixed $items, callable $callback)
         
-                                            <p><p>Get the items in the collection whose keys and values are not present in the given items, using the callback.</p></p>                </div>
+                                            <p><p>Get the items whose keys and values are not present in the given items, using the callback.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_diffAssocUsing">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1459,7 +1467,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffKeys">diffKeys</a>(mixed $items)
         
-                                            <p><p>Get the items in the collection whose keys are not present in the given items.</p></p>                </div>
+                                            <p><p>Get the items whose keys are not present in the given items.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_diffKeys">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1470,7 +1478,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffKeysUsing">diffKeysUsing</a>(mixed $items, callable $callback)
         
-                                            <p><p>Get the items in the collection whose keys are not present in the given items, using the callback.</p></p>                </div>
+                                            <p><p>Get the items whose keys are not present in the given items, using the callback.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_diffKeysUsing">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1481,7 +1489,7 @@
                 <div class="col-md-8">
                     <a href="#method_duplicates">duplicates</a>(callable|string|null $callback = null, bool $strict = false)
         
-                                            <p><p>Retrieve duplicate items from the collection.</p></p>                </div>
+                                            <p><p>Retrieve duplicate items.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_duplicates">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1492,7 +1500,7 @@
                 <div class="col-md-8">
                     <a href="#method_duplicatesStrict">duplicatesStrict</a>(callable|string|null $callback = null)
         
-                                            <p><p>Retrieve duplicate items from the collection using strict comparison.</p></p>                </div>
+                                            <p><p>Retrieve duplicate items using strict comparison.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_duplicatesStrict">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -1534,7 +1542,7 @@
                 <div class="col-md-8">
                     <a href="#method_first">first</a>(callable $callback = null, mixed $default = null)
         
-                                            <p><p>Get the first item from the collection passing the given truth test.</p></p>                </div>
+                                            <p><p>Get the first item from the enumerable passing the given truth test.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_first">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -2020,7 +2028,7 @@
                 <div class="col-md-8">
                     <a href="#method_slice">slice</a>(int $offset, int|null $length = null)
         
-                                            <p><p>Slice the underlying collection array.</p></p>                </div>
+                                            <p><p>Get a slice of items from the enumerable.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_slice">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -2314,7 +2322,7 @@
                 <div class="col-md-8">
                     <a href="#method_countBy">countBy</a>(callable|string $countBy = null)
         
-                                            <p><p>Count the number of items in the collection by a field or using a callback.</p></p>                </div>
+                                            <p><p>Count the number of items in the collection using a given truth test.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Collection.html#method_countBy">
 <abbr title="Illuminate\Support\Collection">Collection</abbr></a></small></div>
             </div>
@@ -6044,7 +6052,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get all of the items in the collection.</p></p>                        
+                            <p><p>Get all items in the enumerable.</p></p>                        
         </div>
         <div class="tags">
             
@@ -6461,7 +6469,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection that are not present in the given items, using the callback.</p></p>                        
+                            <p><p>Get the items that are not present in the given items, using the callback.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6509,7 +6517,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys and values are not present in the given items.</p></p>                        
+                            <p><p>Get the items whose keys and values are not present in the given items.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6552,7 +6560,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys and values are not present in the given items, using the callback.</p></p>                        
+                            <p><p>Get the items whose keys and values are not present in the given items, using the callback.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6600,7 +6608,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys are not present in the given items.</p></p>                        
+                            <p><p>Get the items whose keys are not present in the given items.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6643,7 +6651,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys are not present in the given items, using the callback.</p></p>                        
+                            <p><p>Get the items whose keys are not present in the given items, using the callback.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6691,7 +6699,7 @@
             
 
         <div class="method-description">
-                            <p><p>Retrieve duplicate items from the collection.</p></p>                        
+                            <p><p>Retrieve duplicate items.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6739,7 +6747,7 @@
             
 
         <div class="method-description">
-                            <p><p>Retrieve duplicate items from the collection using strict comparison.</p></p>                        
+                            <p><p>Retrieve duplicate items using strict comparison.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6909,7 +6917,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the first item from the collection passing the given truth test.</p></p>                        
+                            <p><p>Get the first item from the enumerable passing the given truth test.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -8864,7 +8872,7 @@
             
 
         <div class="method-description">
-                            <p><p>Slice the underlying collection array.</p></p>                        
+                            <p><p>Get a slice of items from the enumerable.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -10069,7 +10077,7 @@
             
 
         <div class="method-description">
-                            <p><p>Count the number of items in the collection by a field or using a callback.</p></p>                        
+                            <p><p>Count the number of items in the collection using a given truth test.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>

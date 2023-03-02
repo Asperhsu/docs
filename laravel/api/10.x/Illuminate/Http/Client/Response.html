@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Http\Client\Response | Laravel API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.5/opensearch.xml"
+          title="Laravel API (5.5)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.8/opensearch.xml"
+          title="Laravel API (5.8)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/6.x/opensearch.xml"
+          title="Laravel API (6.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/7.x/opensearch.xml"
+          title="Laravel API (7.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/8.x/opensearch.xml"
+          title="Laravel API (8.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/9.x/opensearch.xml"
+          title="Laravel API (9.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/10.x/opensearch.xml"
+          title="Laravel API (10.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/master/opensearch.xml"
+          title="Laravel API (master)" />
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Http_Client_Response" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select class="form-control" id="version-switcher" name="version">
+                                            <option
+                            value="../../../../5.5/index.html"
+                            data-version="5.5" >Laravel 5.5</option>
+                                            <option
+                            value="../../../../5.8/index.html"
+                            data-version="5.8" >Laravel 5.8</option>
+                                            <option
+                            value="../../../../6.x/index.html"
+                            data-version="6.x" >Laravel 6.x</option>
+                                            <option
+                            value="../../../../7.x/index.html"
+                            data-version="7.x" >Laravel 7.x</option>
+                                            <option
+                            value="../../../../8.x/index.html"
+                            data-version="8.x" >Laravel 8.x</option>
+                                            <option
+                            value="../../../../9.x/index.html"
+                            data-version="9.x" >Laravel 9.x</option>
+                                            <option
+                            value="../../../../10.x/index.html"
+                            data-version="10.x" selected>Laravel 10.x</option>
+                                            <option
+                            value="../../../../master/index.html"
+                            data-version="master" >Laravel Dev</option>
+                                    </select>
+            </form>
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Laravel API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                                        <li role="presentation" class="dropdown visible-xs-block visible-sm-block">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Versions&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li ><a href="../../../../5.5/index.html" data-version="5.5">Laravel 5.5</a></li>
+                        <li ><a href="../../../../5.8/index.html" data-version="5.8">Laravel 5.8</a></li>
+                        <li ><a href="../../../../6.x/index.html" data-version="6.x">Laravel 6.x</a></li>
+                        <li ><a href="../../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
+                        <li ><a href="../../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
+                        <li ><a href="../../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li class="active"><a href="../../../../10.x/index.html" data-version="10.x">Laravel 10.x</a></li>
+                        <li ><a href="../../../../master/index.html" data-version="master">Laravel Dev</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Http/Client.html">Client</a></li><li class="backslash">\</li><li>Response</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Response    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Response</strong>        implements        <a target="_blank" rel="noopener" href="https://www.php.net/ArrayAccess">ArrayAccess</a>        (<a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html"><abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Support/Traits/Macroable.html"><abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_macros">
+                    static                    protected                                        array
+                                                                                
+                                    </td>
+                <td>$macros</td>
+                <td class="last"><p>The registered string macros.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#property_macros">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response">
+                                        protected                                        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                                                                                
+                                    </td>
+                <td>$response</td>
+                <td class="last"><p>The underlying PSR response.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_decoded">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$decoded</td>
+                <td class="last"><p>The decoded JSON response.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cookies">
+                                                                                <abbr title="GuzzleHttp\Cookie\CookieJar">CookieJar</abbr>
+                                                                                
+                                    </td>
+                <td>$cookies</td>
+                <td class="last"><p>The request cookies.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_transferStats">
+                                                                                <abbr title="GuzzleHttp\TransferStats">TransferStats</abbr>|null
+                                                                                
+                                    </td>
+                <td>$transferStats</td>
+                <td class="last"><p>The transfer stats for the request.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ok">ok</a>()
+        
+                                            <p><p>Determine if the response code was 200 &quot;OK&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_ok">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_created">created</a>()
+        
+                                            <p><p>Determine if the response code was 201 &quot;Created&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_created">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_accepted">accepted</a>()
+        
+                                            <p><p>Determine if the response code was 202 &quot;Accepted&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_accepted">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_noContent">noContent</a>(int $status = 204)
+        
+                                            <p><p>Determine if the response code was the given status code and the body has no content.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_noContent">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_movedPermanently">movedPermanently</a>()
+        
+                                            <p><p>Determine if the response code was a 301 &quot;Moved Permanently&quot;.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_movedPermanently">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_found">found</a>()
+        
+                                            <p><p>Determine if the response code was a 302 &quot;Found&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_found">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_badRequest">badRequest</a>()
+        
+                                            <p><p>Determine if the response was a 400 &quot;Bad Request&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_badRequest">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unauthorized">unauthorized</a>()
+        
+                                            <p><p>Determine if the response was a 401 &quot;Unauthorized&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_unauthorized">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_paymentRequired">paymentRequired</a>()
+        
+                                            <p><p>Determine if the response was a 402 &quot;Payment Required&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_paymentRequired">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_forbidden">forbidden</a>()
+        
+                                            <p><p>Determine if the response was a 403 &quot;Forbidden&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_forbidden">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_notFound">notFound</a>()
+        
+                                            <p><p>Determine if the response was a 404 &quot;Not Found&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_notFound">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requestTimeout">requestTimeout</a>()
+        
+                                            <p><p>Determine if the response was a 408 &quot;Request Timeout&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_requestTimeout">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_conflict">conflict</a>()
+        
+                                            <p><p>Determine if the response was a 409 &quot;Conflict&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_conflict">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unprocessableEntity">unprocessableEntity</a>()
+        
+                                            <p><p>Determine if the response was a 422 &quot;Unprocessable Entity&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_unprocessableEntity">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_tooManyRequests">tooManyRequests</a>()
+        
+                                            <p><p>Determine if the response was a 429 &quot;Too Many Requests&quot; response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_tooManyRequests">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_macro">macro</a>(string $name, object|callable $macro)
+        
+                                            <p><p>Register a custom macro.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_macro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mixin">mixin</a>(object $mixin, bool $replace = true)
+        
+                                            <p><p>Mix another object into the class.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_mixin">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasMacro">hasMacro</a>(string $name)
+        
+                                            <p><p>Checks if macro is registered.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_hasMacro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushMacros">flushMacros</a>()
+        
+                                            <p><p>Flush the existing macros.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_flushMacros">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___callStatic">__callStatic</a>(string $method, array $parameters)
+        
+                                            <p><p>Dynamically handle calls to the class.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method___callStatic">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___call">__call</a>(string $method, array $parameters)
+        
+                                            <p><p>Dynamically proxy other methods to the underlying response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr> $response)
+        
+                                            <p><p>Create a new response instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_body">body</a>()
+        
+                                            <p><p>Get the body of the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_json">json</a>(string|null $key = null, mixed $default = null)
+        
+                                            <p><p>Get the JSON decoded body of the response as an array or scalar value.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_object">object</a>()
+        
+                                            <p><p>Get the JSON decoded body of the response as an object.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_collect">collect</a>(string|null $key = null)
+        
+                                            <p><p>Get the JSON decoded body of the response as a collection.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_header">header</a>(string $header)
+        
+                                            <p><p>Get a header from the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_headers">headers</a>()
+        
+                                            <p><p>Get the headers from the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_status">status</a>()
+        
+                                            <p><p>Get the status code of the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reason">reason</a>()
+        
+                                            <p><p>Get the reason phrase of the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_effectiveUri">effectiveUri</a>()
+        
+                                            <p><p>Get the effective URI of the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_successful">successful</a>()
+        
+                                            <p><p>Determine if the request was successful.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_redirect">redirect</a>()
+        
+                                            <p><p>Determine if the response was a redirect.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_failed">failed</a>()
+        
+                                            <p><p>Determine if the response indicates a client or server error occurred.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_clientError">clientError</a>()
+        
+                                            <p><p>Determine if the response indicates a client error occurred.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_serverError">serverError</a>()
+        
+                                            <p><p>Determine if the response indicates a server error occurred.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_onError">onError</a>(callable $callback)
+        
+                                            <p><p>Execute the given callback if there was a server or client error.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Cookie\CookieJar">CookieJar</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cookies">cookies</a>()
+        
+                                            <p><p>Get the response cookies.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_handlerStats">handlerStats</a>()
+        
+                                            <p><p>Get the handler stats of the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_close">close</a>()
+        
+                                            <p><p>Close the stream and any underlying resources.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toPsrResponse">toPsrResponse</a>()
+        
+                                            <p><p>Get the underlying PSR response for the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toException">toException</a>()
+        
+                                            <p><p>Create an exception if a server or client error occurred.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throw">throw</a>()
+        
+                                            <p><p>Throw an exception if a server or client error occurred.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throwIf">throwIf</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|bool $condition)
+        
+                                            <p><p>Throw an exception if a server or client error occurred and the given condition evaluates to true.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throwIfStatus">throwIfStatus</a>(callable|int $statusCode)
+        
+                                            <p><p>Throw an exception if the response status code matches the given code.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throwUnlessStatus">throwUnlessStatus</a>(callable|int $statusCode)
+        
+                                            <p><p>Throw an exception unless the response status code matches the given code.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throwIfClientError">throwIfClientError</a>()
+        
+                                            <p><p>Throw an exception if the response status code is a 4xx level code.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throwIfServerError">throwIfServerError</a>()
+        
+                                            <p><p>Throw an exception if the response status code is a 5xx level code.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_offsetExists">offsetExists</a>(string $offset)
+        
+                                            <p><p>Determine if the given offset exists.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_offsetGet">offsetGet</a>(string $offset)
+        
+                                            <p><p>Get the value for a given offset.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_offsetSet">offsetSet</a>(string $offset, mixed $value)
+        
+                                            <p><p>Set the value at the given offset.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_offsetUnset">offsetUnset</a>(string $offset)
+        
+                                            <p><p>Unset the value at the given offset.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p><p>Get the body of the response.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_ok">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_ok">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L12">at line 12</a></div>
+        <code>                    bool
+    <strong>ok</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response code was 200 &quot;OK&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_created">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_created">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L22">at line 22</a></div>
+        <code>                    bool
+    <strong>created</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response code was 201 &quot;Created&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_accepted">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_accepted">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L32">at line 32</a></div>
+        <code>                    bool
+    <strong>accepted</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response code was 202 &quot;Accepted&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_noContent">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_noContent">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L43">at line 43</a></div>
+        <code>                    bool
+    <strong>noContent</strong>(int $status = 204)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response code was the given status code and the body has no content.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_movedPermanently">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_movedPermanently">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L53">at line 53</a></div>
+        <code>                    bool
+    <strong>movedPermanently</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response code was a 301 &quot;Moved Permanently&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_found">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_found">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L63">at line 63</a></div>
+        <code>                    bool
+    <strong>found</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response code was a 302 &quot;Found&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_badRequest">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_badRequest">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L73">at line 73</a></div>
+        <code>                    bool
+    <strong>badRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 400 &quot;Bad Request&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unauthorized">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_unauthorized">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L83">at line 83</a></div>
+        <code>                    bool
+    <strong>unauthorized</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 401 &quot;Unauthorized&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paymentRequired">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_paymentRequired">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L93">at line 93</a></div>
+        <code>                    bool
+    <strong>paymentRequired</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 402 &quot;Payment Required&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_forbidden">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_forbidden">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L103">at line 103</a></div>
+        <code>                    bool
+    <strong>forbidden</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 403 &quot;Forbidden&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notFound">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_notFound">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L113">at line 113</a></div>
+        <code>                    bool
+    <strong>notFound</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 404 &quot;Not Found&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestTimeout">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_requestTimeout">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L123">at line 123</a></div>
+        <code>                    bool
+    <strong>requestTimeout</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 408 &quot;Request Timeout&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_conflict">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_conflict">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L133">at line 133</a></div>
+        <code>                    bool
+    <strong>conflict</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 409 &quot;Conflict&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unprocessableEntity">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_unprocessableEntity">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L143">at line 143</a></div>
+        <code>                    bool
+    <strong>unprocessableEntity</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 422 &quot;Unprocessable Entity&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tooManyRequests">
+        <div class="location">in <a href="../../../Illuminate/Http/Client/Concerns/DeterminesStatusCode.html#method_tooManyRequests">
+<abbr title="Illuminate\Http\Client\Concerns\DeterminesStatusCode">DeterminesStatusCode</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Concerns/DeterminesStatusCode.php#L153">at line 153</a></div>
+        <code>                    bool
+    <strong>tooManyRequests</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a 429 &quot;Too Many Requests&quot; response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_macro">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_macro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Macroable/Traits/Macroable.php#L26">at line 26</a></div>
+        <code>        static            void
+    <strong>macro</strong>(string $name, object|callable $macro)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register a custom macro.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object|callable</td>
+                <td>$macro</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mixin">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_mixin">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Macroable/Traits/Macroable.php#L40">at line 40</a></div>
+        <code>        static            void
+    <strong>mixin</strong>(object $mixin, bool $replace = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mix another object into the class.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$mixin</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMacro">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_hasMacro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Macroable/Traits/Macroable.php#L60">at line 60</a></div>
+        <code>        static            bool
+    <strong>hasMacro</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks if macro is registered.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushMacros">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_flushMacros">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Macroable/Traits/Macroable.php#L70">at line 70</a></div>
+        <code>        static            void
+    <strong>flushMacros</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flush the existing macros.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method___callStatic">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Macroable/Traits/Macroable.php#L84">at line 84</a></div>
+        <code>        static            mixed
+    <strong>__callStatic</strong>(string $method, array $parameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dynamically handle calls to the class.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/BadMethodCallException">BadMethodCallException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L439">at line 439</a></div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $parameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dynamically proxy other methods to the underlying response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L50">at line 50</a></div>
+        <code>                    void
+    <strong>__construct</strong>(<abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new response instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_body">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L60">at line 60</a></div>
+        <code>                    string
+    <strong>body</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the body of the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_json">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L72">at line 72</a></div>
+        <code>                    mixed
+    <strong>json</strong>(string|null $key = null, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the JSON decoded body of the response as an array or scalar value.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_object">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L90">at line 90</a></div>
+        <code>                    object|array
+    <strong>object</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the JSON decoded body of the response as an object.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collect">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L101">at line 101</a></div>
+        <code>                    <a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a>
+    <strong>collect</strong>(string|null $key = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the JSON decoded body of the response as a collection.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_header">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L112">at line 112</a></div>
+        <code>                    string
+    <strong>header</strong>(string $header)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get a header from the response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_headers">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L122">at line 122</a></div>
+        <code>                    array
+    <strong>headers</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the headers from the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_status">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L132">at line 132</a></div>
+        <code>                    int
+    <strong>status</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the status code of the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reason">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L142">at line 142</a></div>
+        <code>                    string
+    <strong>reason</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the reason phrase of the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_effectiveUri">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L152">at line 152</a></div>
+        <code>                    <abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr>|null
+    <strong>effectiveUri</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the effective URI of the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_successful">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L162">at line 162</a></div>
+        <code>                    bool
+    <strong>successful</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the request was successful.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L172">at line 172</a></div>
+        <code>                    bool
+    <strong>redirect</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response was a redirect.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_failed">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L182">at line 182</a></div>
+        <code>                    bool
+    <strong>failed</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response indicates a client or server error occurred.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clientError">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L192">at line 192</a></div>
+        <code>                    bool
+    <strong>clientError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response indicates a client error occurred.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serverError">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L202">at line 202</a></div>
+        <code>                    bool
+    <strong>serverError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the response indicates a server error occurred.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onError">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L213">at line 213</a></div>
+        <code>                    $this
+    <strong>onError</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Execute the given callback if there was a server or client error.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cookies">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L227">at line 227</a></div>
+        <code>                    <abbr title="GuzzleHttp\Cookie\CookieJar">CookieJar</abbr>
+    <strong>cookies</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the response cookies.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Cookie\CookieJar">CookieJar</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handlerStats">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L237">at line 237</a></div>
+        <code>                    array
+    <strong>handlerStats</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the handler stats of the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L247">at line 247</a></div>
+        <code>                    $this
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Close the stream and any underlying resources.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toPsrResponse">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L259">at line 259</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>toPsrResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the underlying PSR response for the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toException">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L269">at line 269</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a>|null
+    <strong>toException</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create an exception if a server or client error occurred.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throw">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L284">at line 284</a></div>
+        <code>                    $this
+    <strong>throw</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if a server or client error occurred.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwIf">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L308">at line 308</a></div>
+        <code>                    $this
+    <strong>throwIf</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|bool $condition)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if a server or client error occurred and the given condition evaluates to true.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|bool</td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwIfStatus">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L321">at line 321</a></div>
+        <code>                    $this
+    <strong>throwIfStatus</strong>(callable|int $statusCode)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if the response status code matches the given code.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|int</td>
+                <td>$statusCode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwUnlessStatus">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L339">at line 339</a></div>
+        <code>                    $this
+    <strong>throwUnlessStatus</strong>(callable|int $statusCode)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception unless the response status code matches the given code.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|int</td>
+                <td>$statusCode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwIfClientError">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L356">at line 356</a></div>
+        <code>                    $this
+    <strong>throwIfClientError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if the response status code is a 4xx level code.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwIfServerError">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L368">at line 368</a></div>
+        <code>                    $this
+    <strong>throwIfServerError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if the response status code is a 5xx level code.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/RequestException.html"><abbr title="Illuminate\Http\Client\RequestException">RequestException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L379">at line 379</a></div>
+        <code>                    bool
+    <strong>offsetExists</strong>(string $offset)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the given offset exists.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L390">at line 390</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(string $offset)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the value for a given offset.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L404">at line 404</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(string $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the value at the given offset.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L417">at line 417</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(string $offset)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Unset the value at the given offset.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Http/Client/Response.php#L427">at line 427</a></div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the body of the response.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

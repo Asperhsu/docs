@@ -1,0 +1,5232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Support\Facades\View | Laravel API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.5/opensearch.xml"
+          title="Laravel API (5.5)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.8/opensearch.xml"
+          title="Laravel API (5.8)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/6.x/opensearch.xml"
+          title="Laravel API (6.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/7.x/opensearch.xml"
+          title="Laravel API (7.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/8.x/opensearch.xml"
+          title="Laravel API (8.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/9.x/opensearch.xml"
+          title="Laravel API (9.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/10.x/opensearch.xml"
+          title="Laravel API (10.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/master/opensearch.xml"
+          title="Laravel API (master)" />
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Support_Facades_View" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select class="form-control" id="version-switcher" name="version">
+                                            <option
+                            value="../../../../5.5/index.html"
+                            data-version="5.5" >Laravel 5.5</option>
+                                            <option
+                            value="../../../../5.8/index.html"
+                            data-version="5.8" >Laravel 5.8</option>
+                                            <option
+                            value="../../../../6.x/index.html"
+                            data-version="6.x" >Laravel 6.x</option>
+                                            <option
+                            value="../../../../7.x/index.html"
+                            data-version="7.x" >Laravel 7.x</option>
+                                            <option
+                            value="../../../../8.x/index.html"
+                            data-version="8.x" >Laravel 8.x</option>
+                                            <option
+                            value="../../../../9.x/index.html"
+                            data-version="9.x" >Laravel 9.x</option>
+                                            <option
+                            value="../../../../10.x/index.html"
+                            data-version="10.x" selected>Laravel 10.x</option>
+                                            <option
+                            value="../../../../master/index.html"
+                            data-version="master" >Laravel Dev</option>
+                                    </select>
+            </form>
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Laravel API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                                        <li role="presentation" class="dropdown visible-xs-block visible-sm-block">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Versions&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li ><a href="../../../../5.5/index.html" data-version="5.5">Laravel 5.5</a></li>
+                        <li ><a href="../../../../5.8/index.html" data-version="5.8">Laravel 5.8</a></li>
+                        <li ><a href="../../../../6.x/index.html" data-version="6.x">Laravel 6.x</a></li>
+                        <li ><a href="../../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
+                        <li ><a href="../../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
+                        <li ><a href="../../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li class="active"><a href="../../../../10.x/index.html" data-version="10.x">Laravel 10.x</a></li>
+                        <li ><a href="../../../../master/index.html" data-version="master">Laravel Dev</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Support.html">Support</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Support/Facades.html">Facades</a></li><li class="backslash">\</li><li>View</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>View    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>View</strong>        extends <a href="../../../Illuminate/Support/Facades/Facade.html"><abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a>        (<a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_app">
+                    static                    protected                                        <a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a>
+                                                                                
+                                    </td>
+                <td>$app</td>
+                <td class="last"><p>The application instance being facaded.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#property_app">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resolvedInstance">
+                    static                    protected                                        array
+                                                                                
+                                    </td>
+                <td>$resolvedInstance</td>
+                <td class="last"><p>The resolved object instances.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#property_resolvedInstance">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cached">
+                    static                    protected                                        bool
+                                                                                
+                                    </td>
+                <td>$cached</td>
+                <td class="last"><p>Indicates if the resolved instance should be cached.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#property_cached">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resolved">resolved</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback)
+        
+                                            <p><p>Run a Closure when the facade has been resolved.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_resolved">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Mockery\MockInterface">MockInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_spy">spy</a>()
+        
+                                            <p><p>Convert the facade into a Mockery spy.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_spy">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Mockery\MockInterface">MockInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_partialMock">partialMock</a>()
+        
+                                            <p><p>Initiate a partial mock on the facade.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_partialMock">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Mockery\Expectation">Expectation</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_shouldReceive">shouldReceive</a>()
+        
+                                            <p><p>Initiate a mock expectation on the facade.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_shouldReceive">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Mockery\Expectation">Expectation</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_expects">expects</a>()
+        
+                                            <p><p>Initiate a mock expectation on the facade.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_expects">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Mockery\MockInterface">MockInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createFreshMockInstance">createFreshMockInstance</a>()
+        
+                                            <p><p>Create a fresh mock instance for the given class.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_createFreshMockInstance">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Mockery\MockInterface">MockInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createMock">createMock</a>()
+        
+                                            <p><p>Create a fresh mock instance for the given class.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_createMock">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isMock">isMock</a>()
+        
+                                            <p><p>Determines whether a mock is set as the instance of the facade.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_isMock">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getMockableClass">getMockableClass</a>()
+        
+                                            <p><p>Get the mockable class for the bound instance.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_getMockableClass">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_swap">swap</a>(mixed $instance)
+        
+                                            <p><p>Hotswap the underlying instance behind the facade.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_swap">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isFake">isFake</a>()
+        
+                                            <p><p>Determines whether a &quot;fake&quot; has been set as the facade instance.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_isFake">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFacadeRoot">getFacadeRoot</a>()
+        
+                                            <p><p>Get the root object behind the facade.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_getFacadeRoot">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFacadeAccessor">getFacadeAccessor</a>()
+        
+                                            <p><p>Get the registered name of the component.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resolveFacadeInstance">resolveFacadeInstance</a>(string $name)
+        
+                                            <p><p>Resolve the facade root instance from the container.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_resolveFacadeInstance">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_clearResolvedInstance">clearResolvedInstance</a>(string $name)
+        
+                                            <p><p>Clear a resolved facade instance.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_clearResolvedInstance">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_clearResolvedInstances">clearResolvedInstances</a>()
+        
+                                            <p><p>Clear all of the resolved instances.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_clearResolvedInstances">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_defaultAliases">defaultAliases</a>()
+        
+                                            <p><p>Get the application default aliases.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_defaultAliases">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFacadeApplication">getFacadeApplication</a>()
+        
+                                            <p><p>Get the application instance behind the facade.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_getFacadeApplication">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setFacadeApplication">setFacadeApplication</a>(<a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a> $app)
+        
+                                            <p><p>Set the application instance.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method_setFacadeApplication">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___callStatic">__callStatic</a>(string $method, array $args)
+        
+                                            <p><p>Handle dynamic, static calls to the object.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Facades/Facade.html#method___callStatic">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_file">file</a>(string $path, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_make">make</a>(string $view, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_first">first</a>(array $views, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderWhen">renderWhen</a>(bool $condition, string $view, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderUnless">renderUnless</a>(bool $condition, string $view, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderEach">renderEach</a>(string $view, array $data, string $iterator, string $empty = &#039;raw|&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exists">exists</a>(string $view)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Contracts/View/Engine.html"><abbr title="Illuminate\Contracts\View\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEngineFromPath">getEngineFromPath</a>(string $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_share">share</a>(array|string $key, mixed|null $value = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_incrementRender">incrementRender</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_decrementRender">decrementRender</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doneRendering">doneRendering</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasRenderedOnce">hasRenderedOnce</a>(string $id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_markAsRenderedOnce">markAsRenderedOnce</a>(string $id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addLocation">addLocation</a>(string $location)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addNamespace">addNamespace</a>(string $namespace, string|array $hints)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prependNamespace">prependNamespace</a>(string $namespace, string|array $hints)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_replaceNamespace">replaceNamespace</a>(string $namespace, string|array $hints)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addExtension">addExtension</a>(string $extension, string $engine, Closure|null $resolver = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushState">flushState</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushStateIfDoneRendering">flushStateIfDoneRendering</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getExtensions">getExtensions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/View/Engines/EngineResolver.html"><abbr title="Illuminate\View\Engines\EngineResolver">EngineResolver</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEngineResolver">getEngineResolver</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/View/ViewFinderInterface.html"><abbr title="Illuminate\View\ViewFinderInterface">ViewFinderInterface</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFinder">getFinder</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setFinder">setFinder</a>(<a href="../../../Illuminate/View/ViewFinderInterface.html"><abbr title="Illuminate\View\ViewFinderInterface">ViewFinderInterface</abbr></a> $finder)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushFinderCache">flushFinderCache</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Contracts/Events/Dispatcher.html"><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDispatcher">getDispatcher</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setDispatcher">setDispatcher</a>(<a href="../../../Illuminate/Contracts/Events/Dispatcher.html"><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></a> $events)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Illuminate/Contracts/Container/Container.html"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getContainer">getContainer</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setContainer">setContainer</a>(<a href="../../../Illuminate/Contracts/Container/Container.html"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a> $container)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_shared">shared</a>(string $key, mixed $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getShared">getShared</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_macro">macro</a>(string $name, object|callable $macro)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mixin">mixin</a>(object $mixin, bool $replace = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasMacro">hasMacro</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushMacros">flushMacros</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startComponent">startComponent</a>(<abbr title="Illuminate\Contracts\View\View|\Illuminate\Contracts\Support\Htmlable|\Closure|string">Closure|string</abbr> $view, array $data = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startComponentFirst">startComponentFirst</a>(array $names, array $data = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderComponent">renderComponent</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConsumableComponentData">getConsumableComponentData</a>(string $key, mixed $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_slot">slot</a>(string $name, string|null $content = null, array $attributes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_endSlot">endSlot</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_creator">creator</a>(array|string $views, Closure|string $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_composers">composers</a>(array $composers)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_composer">composer</a>(array|string $views, Closure|string $callback)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_callComposer">callComposer</a>(<a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a> $view)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_callCreator">callCreator</a>(<a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a> $view)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startFragment">startFragment</a>(string $fragment)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopFragment">stopFragment</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFragment">getFragment</a>(string $name, string|null $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFragments">getFragments</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushFragments">flushFragments</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startSection">startSection</a>(string $section, string|null $content = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_inject">inject</a>(string $section, string $content)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_yieldSection">yieldSection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopSection">stopSection</a>(bool $overwrite = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_appendSection">appendSection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_yieldContent">yieldContent</a>(string $section, string $default = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_parentPlaceholder">parentPlaceholder</a>(string $section = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasSection">hasSection</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sectionMissing">sectionMissing</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSection">getSection</a>(string $name, string|null $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSections">getSections</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushSections">flushSections</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addLoop">addLoop</a>(Countable|array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_incrementLoopIndices">incrementLoopIndices</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_popLoop">popLoop</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;stdClass|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLastLoop">getLastLoop</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLoopStack">getLoopStack</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startPush">startPush</a>(string $section, string $content = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopPush">stopPush</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startPrepend">startPrepend</a>(string $section, string $content = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopPrepend">stopPrepend</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_yieldPushContent">yieldPushContent</a>(string $section, string $default = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushStacks">flushStacks</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startTranslation">startTranslation</a>(array $replacements = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderTranslation">renderTranslation</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_resolved">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_resolved">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L44">at line 44</a></div>
+        <code>        static            void
+    <strong>resolved</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Run a Closure when the facade has been resolved.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_spy">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_spy">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L62">at line 62</a></div>
+        <code>        static            <abbr title="Mockery\MockInterface">MockInterface</abbr>
+    <strong>spy</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Convert the facade into a Mockery spy.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Mockery\MockInterface">MockInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_partialMock">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_partialMock">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L78">at line 78</a></div>
+        <code>        static            <abbr title="Mockery\MockInterface">MockInterface</abbr>
+    <strong>partialMock</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initiate a partial mock on the facade.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Mockery\MockInterface">MockInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldReceive">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_shouldReceive">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L94">at line 94</a></div>
+        <code>        static            <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>shouldReceive</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initiate a mock expectation on the facade.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expects">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_expects">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L110">at line 110</a></div>
+        <code>        static            <abbr title="Mockery\Expectation">Expectation</abbr>
+    <strong>expects</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initiate a mock expectation on the facade.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Mockery\Expectation">Expectation</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createFreshMockInstance">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_createFreshMockInstance">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L126">at line 126</a></div>
+        <code>        static    protected        <abbr title="Mockery\MockInterface">MockInterface</abbr>
+    <strong>createFreshMockInstance</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a fresh mock instance for the given class.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Mockery\MockInterface">MockInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createMock">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_createMock">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L140">at line 140</a></div>
+        <code>        static    protected        <abbr title="Mockery\MockInterface">MockInterface</abbr>
+    <strong>createMock</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a fresh mock instance for the given class.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Mockery\MockInterface">MockInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMock">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_isMock">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L152">at line 152</a></div>
+        <code>        static    protected        bool
+    <strong>isMock</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determines whether a mock is set as the instance of the facade.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMockableClass">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_getMockableClass">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L165">at line 165</a></div>
+        <code>        static    protected        string|null
+    <strong>getMockableClass</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the mockable class for the bound instance.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_swap">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_swap">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L178">at line 178</a></div>
+        <code>        static            void
+    <strong>swap</strong>(mixed $instance)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Hotswap the underlying instance behind the facade.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$instance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFake">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_isFake">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L192">at line 192</a></div>
+        <code>        static    protected        bool
+    <strong>isFake</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determines whether a &quot;fake&quot; has been set as the facade instance.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFacadeRoot">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_getFacadeRoot">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L205">at line 205</a></div>
+        <code>        static            mixed
+    <strong>getFacadeRoot</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the root object behind the facade.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFacadeAccessor">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L93">at line 93</a></div>
+        <code>        static    protected        string
+    <strong>getFacadeAccessor</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the registered name of the component.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveFacadeInstance">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_resolveFacadeInstance">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L228">at line 228</a></div>
+        <code>        static    protected        mixed
+    <strong>resolveFacadeInstance</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resolve the facade root instance from the container.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearResolvedInstance">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_clearResolvedInstance">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L249">at line 249</a></div>
+        <code>        static            void
+    <strong>clearResolvedInstance</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Clear a resolved facade instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearResolvedInstances">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_clearResolvedInstances">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L259">at line 259</a></div>
+        <code>        static            void
+    <strong>clearResolvedInstances</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Clear all of the resolved instances.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultAliases">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_defaultAliases">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L269">at line 269</a></div>
+        <code>        static            <a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a>
+    <strong>defaultAliases</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the application default aliases.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFacadeApplication">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_getFacadeApplication">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L320">at line 320</a></div>
+        <code>        static            <a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a>
+    <strong>getFacadeApplication</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the application instance behind the facade.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFacadeApplication">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method_setFacadeApplication">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L331">at line 331</a></div>
+        <code>        static            void
+    <strong>setFacadeApplication</strong>(<a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a> $app)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the application instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a></td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">in <a href="../../../Illuminate/Support/Facades/Facade.html#method___callStatic">
+<abbr title="Illuminate\Support\Facades\Facade">Facade</abbr></a> <a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/Facade.php#L345">at line 345</a></div>
+        <code>        static            mixed
+    <strong>__callStatic</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Handle dynamic, static calls to the object.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_file">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+    <strong>file</strong>(string $path, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mergeData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_make">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+    <strong>make</strong>(string $view, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mergeData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+    <strong>first</strong>(array $views, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$views</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mergeData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderWhen">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>renderWhen</strong>(bool $condition, string $view, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mergeData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderUnless">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>renderUnless</strong>(bool $condition, string $view, <abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr> $data = [], array $mergeData = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Support\Arrayable|array">Arrayable|array</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mergeData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderEach">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>renderEach</strong>(string $view, array $data, string $iterator, string $empty = &#039;raw|&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$iterator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$empty</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            bool
+    <strong>exists</strong>(string $view)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEngineFromPath">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/Contracts/View/Engine.html"><abbr title="Illuminate\Contracts\View\Engine">Engine</abbr></a>
+    <strong>getEngineFromPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/View/Engine.html"><abbr title="Illuminate\Contracts\View\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_share">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            mixed
+    <strong>share</strong>(array|string $key, mixed|null $value = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed|null</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_incrementRender">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>incrementRender</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decrementRender">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>decrementRender</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doneRendering">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            bool
+    <strong>doneRendering</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRenderedOnce">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            bool
+    <strong>hasRenderedOnce</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_markAsRenderedOnce">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>markAsRenderedOnce</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addLocation">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>addLocation</strong>(string $location)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addNamespace">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a>
+    <strong>addNamespace</strong>(string $namespace, string|array $hints)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$hints</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prependNamespace">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a>
+    <strong>prependNamespace</strong>(string $namespace, string|array $hints)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$hints</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceNamespace">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a>
+    <strong>replaceNamespace</strong>(string $namespace, string|array $hints)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$hints</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/View/Factory.html"><abbr title="Illuminate\View\Factory">Factory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addExtension">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>addExtension</strong>(string $extension, string $engine, Closure|null $resolver = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$engine</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>Closure|null</td>
+                <td>$resolver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushState">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>flushState</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushStateIfDoneRendering">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>flushStateIfDoneRendering</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtensions">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>getExtensions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEngineResolver">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/View/Engines/EngineResolver.html"><abbr title="Illuminate\View\Engines\EngineResolver">EngineResolver</abbr></a>
+    <strong>getEngineResolver</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/View/Engines/EngineResolver.html"><abbr title="Illuminate\View\Engines\EngineResolver">EngineResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFinder">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/View/ViewFinderInterface.html"><abbr title="Illuminate\View\ViewFinderInterface">ViewFinderInterface</abbr></a>
+    <strong>getFinder</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/View/ViewFinderInterface.html"><abbr title="Illuminate\View\ViewFinderInterface">ViewFinderInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFinder">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>setFinder</strong>(<a href="../../../Illuminate/View/ViewFinderInterface.html"><abbr title="Illuminate\View\ViewFinderInterface">ViewFinderInterface</abbr></a> $finder)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/View/ViewFinderInterface.html"><abbr title="Illuminate\View\ViewFinderInterface">ViewFinderInterface</abbr></a></td>
+                <td>$finder</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushFinderCache">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>flushFinderCache</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDispatcher">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/Contracts/Events/Dispatcher.html"><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></a>
+    <strong>getDispatcher</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/Events/Dispatcher.html"><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDispatcher">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>setDispatcher</strong>(<a href="../../../Illuminate/Contracts/Events/Dispatcher.html"><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></a> $events)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/Events/Dispatcher.html"><abbr title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</abbr></a></td>
+                <td>$events</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContainer">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            <a href="../../../Illuminate/Contracts/Container/Container.html"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a>
+    <strong>getContainer</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/Container/Container.html"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContainer">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>setContainer</strong>(<a href="../../../Illuminate/Contracts/Container/Container.html"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a> $container)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/Container/Container.html"><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></a></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shared">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            mixed
+    <strong>shared</strong>(string $key, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getShared">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>getShared</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_macro">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>macro</strong>(string $name, object|callable $macro)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object|callable</td>
+                <td>$macro</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mixin">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>mixin</strong>(object $mixin, bool $replace = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$mixin</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMacro">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            bool
+    <strong>hasMacro</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushMacros">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>flushMacros</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startComponent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>startComponent</strong>(<abbr title="Illuminate\Contracts\View\View|\Illuminate\Contracts\Support\Htmlable|\Closure|string">Closure|string</abbr> $view, array $data = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\View\View|\Illuminate\Contracts\Support\Htmlable|\Closure|string">Closure|string</abbr></td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startComponentFirst">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>startComponentFirst</strong>(array $names, array $data = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$names</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderComponent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>renderComponent</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConsumableComponentData">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            mixed|null
+    <strong>getConsumableComponentData</strong>(string $key, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_slot">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>slot</strong>(string $name, string|null $content = null, array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endSlot">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>endSlot</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_creator">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>creator</strong>(array|string $views, Closure|string $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$views</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>Closure|string</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_composers">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>composers</strong>(array $composers)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$composers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_composer">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>composer</strong>(array|string $views, Closure|string $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$views</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>Closure|string</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callComposer">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>callComposer</strong>(<a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a> $view)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a></td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callCreator">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>callCreator</strong>(<a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a> $view)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a></td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startFragment">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>startFragment</strong>(string $fragment)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fragment</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopFragment">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>stopFragment</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFragment">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            mixed
+    <strong>getFragment</strong>(string $name, string|null $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFragments">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>getFragments</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushFragments">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>flushFragments</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startSection">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>startSection</strong>(string $section, string|null $content = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inject">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>inject</strong>(string $section, string $content)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yieldSection">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>yieldSection</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopSection">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>stopSection</strong>(bool $overwrite = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$overwrite</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appendSection">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>appendSection</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yieldContent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>yieldContent</strong>(string $section, string $default = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parentPlaceholder">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>parentPlaceholder</strong>(string $section = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasSection">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            bool
+    <strong>hasSection</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sectionMissing">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            bool
+    <strong>sectionMissing</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSection">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            mixed
+    <strong>getSection</strong>(string $name, string|null $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSections">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>getSections</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushSections">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>flushSections</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addLoop">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>addLoop</strong>(Countable|array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Countable|array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_incrementLoopIndices">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>incrementLoopIndices</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_popLoop">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>popLoop</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastLoop">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            stdClass|null
+    <strong>getLastLoop</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>stdClass|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoopStack">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            array
+    <strong>getLoopStack</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startPush">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>startPush</strong>(string $section, string $content = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopPush">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>stopPush</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startPrepend">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>startPrepend</strong>(string $section, string $content = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopPrepend">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>stopPrepend</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yieldPushContent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>yieldPushContent</strong>(string $section, string $default = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushStacks">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>flushStacks</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startTranslation">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            void
+    <strong>startTranslation</strong>(array $replacements = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$replacements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderTranslation">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/10.x/src/Illuminate/Support/Facades/View.php#L86">at line 86</a></div>
+        <code>        static            string
+    <strong>renderTranslation</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

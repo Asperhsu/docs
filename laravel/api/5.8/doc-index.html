@@ -43,6 +43,10 @@
           title="Laravel API (9.x)" />
     <link rel="search"
           type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/10.x/opensearch.xml"
+          title="Laravel API (10.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
           href="https://docs.asper.one/laravel/api/master/opensearch.xml"
           title="Laravel API (master)" />
     </head>
@@ -71,6 +75,9 @@
                                             <option
                             value="../9.x/index.html"
                             data-version="9.x" >Laravel 9.x</option>
+                                            <option
+                            value="../10.x/index.html"
+                            data-version="10.x" >Laravel 10.x</option>
                                             <option
                             value="../master/index.html"
                             data-version="master" >Laravel Dev</option>
@@ -125,6 +132,7 @@
                         <li ><a href="../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
                         <li ><a href="../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
                         <li ><a href="../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li ><a href="../10.x/index.html" data-version="10.x">Laravel 10.x</a></li>
                         <li ><a href="../master/index.html" data-version="master">Laravel Dev</a></li>
                         </ul>
                     </li>
@@ -314,7 +322,7 @@
 <abbr title="Illuminate\Container\Container">Container</abbr>::alias</a>() &mdash; <em>Method in class <a href="Illuminate/Container/Container.html"><abbr title="Illuminate\Container\Container">Container</abbr></a></em></dt>
                     <dd><p>Alias a type to a different name.</p></dd><dt><a href="Illuminate/Container/Container.html#method_afterResolving">
 <abbr title="Illuminate\Container\Container">Container</abbr>::afterResolving</a>() &mdash; <em>Method in class <a href="Illuminate/Container/Container.html"><abbr title="Illuminate\Container\Container">Container</abbr></a></em></dt>
-                    <dd><p>Register a new after resolving callback for all types.</p></dd><dt><a href="Illuminate/Contracts/Auth/Access/Authorizable.html"><abbr title="Illuminate\Contracts\Auth\Access\Authorizable">Authorizable</abbr></a> &mdash; <em>Class in namespace <a href="Illuminate/Contracts/Auth/Access.html">Illuminate\Contracts\Auth\Access</a></em></dt>
+                    <dd><p>Register a new after resolving callback.</p></dd><dt><a href="Illuminate/Contracts/Auth/Access/Authorizable.html"><abbr title="Illuminate\Contracts\Auth\Access\Authorizable">Authorizable</abbr></a> &mdash; <em>Class in namespace <a href="Illuminate/Contracts/Auth/Access.html">Illuminate\Contracts\Auth\Access</a></em></dt>
                     <dd></dd><dt><a href="Illuminate/Contracts/Auth/Access/Gate.html#method_after">
 <abbr title="Illuminate\Contracts\Auth\Access\Gate">Gate</abbr>::after</a>() &mdash; <em>Method in class <a href="Illuminate/Contracts/Auth/Access/Gate.html"><abbr title="Illuminate\Contracts\Auth\Access\Gate">Gate</abbr></a></em></dt>
                     <dd><p>Register a callback to run after all Gate checks.</p></dd><dt><a href="Illuminate/Contracts/Auth/Access/Gate.html#method_allows">
@@ -1114,9 +1122,9 @@
 <abbr title="Illuminate\Support\Manager">Manager</abbr>#app</a> &mdash; <em>Property in class <a href="Illuminate/Support/Manager.html"><abbr title="Illuminate\Support\Manager">Manager</abbr></a></em></dt>
                     <dd><p>The application instance.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_add">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::add</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Add a message to the message bag.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_all">
+                    <dd><p>Add a message to the bag.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_all">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::all</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Get all of the messages for every key in the message bag.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_any">
+                    <dd><p>Get all of the messages for every key in the bag.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_any">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::any</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>Determine if the message bag has any messages.</p></dd><dt>$<a href="Illuminate/Support/ServiceProvider.html#property_app">
 <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>#app</a> &mdash; <em>Property in class <a href="Illuminate/Support/ServiceProvider.html"><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr></a></em></dt>
@@ -3526,7 +3534,7 @@
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::checkFormat</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>Get the appropriate format based on the given format.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_count">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::count</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Get the number of messages in the message bag.</p></dd><dt><a href="Illuminate/Support/ServiceProvider.html#method_commands">
+                    <dd><p>Get the number of messages in the container.</p></dd><dt><a href="Illuminate/Support/ServiceProvider.html#method_commands">
 <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>::commands</a>() &mdash; <em>Method in class <a href="Illuminate/Support/ServiceProvider.html"><abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr></a></em></dt>
                     <dd><p>Register the package's custom Artisan commands.</p></dd><dt>$<a href="Illuminate/Support/Str.html#property_camelCache">
 <abbr title="Illuminate\Support\Str">Str</abbr>#camelCache</a> &mdash; <em>Property in class <a href="Illuminate/Support/Str.html"><abbr title="Illuminate\Support\Str">Str</abbr></a></em></dt>
@@ -6141,7 +6149,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>#format</a> &mdash; <em>Property in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>Default format for message output.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_first">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::first</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Get the first message from the message bag for a given key.</p></dd><dt><a href="Illuminate/Support/Str.html#method_finish">
+                    <dd><p>Get the first message from the bag for a given key.</p></dd><dt><a href="Illuminate/Support/Str.html#method_finish">
 <abbr title="Illuminate\Support\Str">Str</abbr>::finish</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Str.html"><abbr title="Illuminate\Support\Str">Str</abbr></a></em></dt>
                     <dd><p>Cap a string with a single instance of a given value.</p></dd><dt><a href="Illuminate/Support/Testing/Fakes/EventFake.html#method_flush">
 <abbr title="Illuminate\Support\Testing\Fakes\EventFake">EventFake</abbr>::flush</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Testing/Fakes/EventFake.html"><abbr title="Illuminate\Support\Testing\Fakes\EventFake">EventFake</abbr></a></em></dt>
@@ -6917,9 +6925,9 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>::getQueueableId</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
                     <dd><p>Get the queueable identity for the entity.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_getQueueableRelations">
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>::getQueueableRelations</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
-                    <dd><p>Get the queueable relationships for the entity.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_getQueueableConnection">
+                    <dd><p>Get the relationships for the entity.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_getQueueableConnection">
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>::getQueueableConnection</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
-                    <dd><p>Get the queueable connection for the entity.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_getRouteKey">
+                    <dd><p>Get the connection of the entity.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_getRouteKey">
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>::getRouteKey</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
                     <dd><p>Get the value of the model's route key.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_getRouteKeyName">
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>::getRouteKeyName</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
@@ -8277,11 +8285,11 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Support\Manager">Manager</abbr>::getDrivers</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Manager.html"><abbr title="Illuminate\Support\Manager">Manager</abbr></a></em></dt>
                     <dd><p>Get all of the created &quot;drivers&quot;.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_get">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::get</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Get all of the messages from the message bag for a given key.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_getMessagesForWildcardKey">
+                    <dd><p>Get all of the messages from the bag for a given key.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_getMessagesForWildcardKey">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::getMessagesForWildcardKey</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>Get the messages for a wildcard key.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_getMessages">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::getMessages</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Get the raw messages in the message bag.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_getMessageBag">
+                    <dd><p>Get the raw messages in the container.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_getMessageBag">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::getMessageBag</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>Get the messages for the instance.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_getFormat">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::getFormat</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
@@ -8874,13 +8882,13 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Pagination\AbstractPaginator">AbstractPaginator</abbr>::hasPages</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/AbstractPaginator.html"><abbr title="Illuminate\Pagination\AbstractPaginator">AbstractPaginator</abbr></a></em></dt>
                     <dd><p>Determine if there are enough items to split into multiple pages.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_hasMorePages">
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::hasMorePages</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
-                    <dd><p>Determine if there are more items in the data source.</p></dd><dt>$<a href="Illuminate/Pagination/Paginator.html#property_hasMore">
+                    <dd><p>Determine if there is more items in the data store.</p></dd><dt>$<a href="Illuminate/Pagination/Paginator.html#property_hasMore">
 <abbr title="Illuminate\Pagination\Paginator">Paginator</abbr>#hasMore</a> &mdash; <em>Property in class <a href="Illuminate/Pagination/Paginator.html"><abbr title="Illuminate\Pagination\Paginator">Paginator</abbr></a></em></dt>
                     <dd><p>Determine if there are more items in the data source.</p></dd><dt><a href="Illuminate/Pagination/Paginator.html#method_hasMorePagesWhen">
 <abbr title="Illuminate\Pagination\Paginator">Paginator</abbr>::hasMorePagesWhen</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/Paginator.html"><abbr title="Illuminate\Pagination\Paginator">Paginator</abbr></a></em></dt>
                     <dd><p>Manually indicate that the paginator does have more pages.</p></dd><dt><a href="Illuminate/Pagination/Paginator.html#method_hasMorePages">
 <abbr title="Illuminate\Pagination\Paginator">Paginator</abbr>::hasMorePages</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/Paginator.html"><abbr title="Illuminate\Pagination\Paginator">Paginator</abbr></a></em></dt>
-                    <dd><p>Determine if there are more items in the data source.</p></dd><dt><a href="Illuminate/Pagination/UrlWindow.html#method_hasPages">
+                    <dd><p>Determine if there is more items in the data store.</p></dd><dt><a href="Illuminate/Pagination/UrlWindow.html#method_hasPages">
 <abbr title="Illuminate\Pagination\UrlWindow">UrlWindow</abbr>::hasPages</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/UrlWindow.html"><abbr title="Illuminate\Pagination\UrlWindow">UrlWindow</abbr></a></em></dt>
                     <dd><p>Determine if the underlying paginator being presented has pages to show.</p></dd><dt><a href="Illuminate/Pipeline/Hub.html"><abbr title="Illuminate\Pipeline\Hub">Hub</abbr></a> &mdash; <em>Class in namespace <a href="Illuminate/Pipeline.html">Illuminate\Pipeline</a></em></dt>
                     <dd></dd><dt><a href="Illuminate/Queue/CallQueuedClosure.html#method_handle">
@@ -9042,7 +9050,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Support\HtmlString">HtmlString</abbr>#html</a> &mdash; <em>Property in class <a href="Illuminate/Support/HtmlString.html"><abbr title="Illuminate\Support\HtmlString">HtmlString</abbr></a></em></dt>
                     <dd><p>The HTML string.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_has">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::has</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Determine if messages exist for all of the given keys.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_hasAny">
+                    <dd><p>Determine if messages exist for a given key.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_hasAny">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::hasAny</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>Determine if messages exist for any of the given keys.</p></dd><dt><a href="Illuminate/Support/Testing/Fakes/BusFake.html#method_hasDispatched">
 <abbr title="Illuminate\Support\Testing\Fakes\BusFake">BusFake</abbr>::hasDispatched</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Testing/Fakes/BusFake.html"><abbr title="Illuminate\Support\Testing\Fakes\BusFake">BusFake</abbr></a></em></dt>
@@ -10064,7 +10072,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::links</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
                     <dd><p>Render the paginator using the given view.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_lastPage">
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::lastPage</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
-                    <dd><p>Get the last page.</p></dd><dt><a href="Illuminate/Pagination/Paginator.html#method_links">
+                    <dd><p>Get the page number of the last available page.</p></dd><dt><a href="Illuminate/Pagination/Paginator.html#method_links">
 <abbr title="Illuminate\Pagination\Paginator">Paginator</abbr>::links</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/Paginator.html"><abbr title="Illuminate\Pagination\Paginator">Paginator</abbr></a></em></dt>
                     <dd><p>Render the paginator using the given view.</p></dd><dt><a href="Illuminate/Pagination/UrlWindow.html#method_lastPage">
 <abbr title="Illuminate\Pagination\UrlWindow">UrlWindow</abbr>::lastPage</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/UrlWindow.html"><abbr title="Illuminate\Pagination\UrlWindow">UrlWindow</abbr></a></em></dt>
@@ -10985,7 +10993,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>#messages</a> &mdash; <em>Property in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>All of the registered messages.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_merge">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::merge</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
-                    <dd><p>Merge a new array of messages into the message bag.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_messages">
+                    <dd><p>Merge a new array of messages into the bag.</p></dd><dt><a href="Illuminate/Support/MessageBag.html#method_messages">
 <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>::messages</a>() &mdash; <em>Method in class <a href="Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></em></dt>
                     <dd><p>Get the raw messages in the message bag.</p></dd><dt><a href="Illuminate/Support/Pluralizer.html#method_matchCase">
 <abbr title="Illuminate\Support\Pluralizer">Pluralizer</abbr>::matchCase</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Pluralizer.html"><abbr title="Illuminate\Support\Pluralizer">Pluralizer</abbr></a></em></dt>
@@ -11357,9 +11365,9 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Notifications\SendQueuedNotifications">SendQueuedNotifications</abbr>#notification</a> &mdash; <em>Property in class <a href="Illuminate/Notifications/SendQueuedNotifications.html"><abbr title="Illuminate\Notifications\SendQueuedNotifications">SendQueuedNotifications</abbr></a></em></dt>
                     <dd><p>The notification to be sent.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_nextPageUrl">
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::nextPageUrl</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
-                    <dd><p>Get the URL for the next page.</p></dd><dt><a href="Illuminate/Pagination/Paginator.html#method_nextPageUrl">
+                    <dd><p>The URL for the next page, or null.</p></dd><dt><a href="Illuminate/Pagination/Paginator.html#method_nextPageUrl">
 <abbr title="Illuminate\Pagination\Paginator">Paginator</abbr>::nextPageUrl</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/Paginator.html"><abbr title="Illuminate\Pagination\Paginator">Paginator</abbr></a></em></dt>
-                    <dd><p>Get the URL for the next page.</p></dd><dt><a href="Illuminate/Queue/Connectors/NullConnector.html"><abbr title="Illuminate\Queue\Connectors\NullConnector">NullConnector</abbr></a> &mdash; <em>Class in namespace <a href="Illuminate/Queue/Connectors.html">Illuminate\Queue\Connectors</a></em></dt>
+                    <dd><p>The URL for the next page, or null.</p></dd><dt><a href="Illuminate/Queue/Connectors/NullConnector.html"><abbr title="Illuminate\Queue\Connectors\NullConnector">NullConnector</abbr></a> &mdash; <em>Class in namespace <a href="Illuminate/Queue/Connectors.html">Illuminate\Queue\Connectors</a></em></dt>
                     <dd></dd><dt>$<a href="Illuminate/Queue/Console/FailedTableCommand.html#property_name">
 <abbr title="Illuminate\Queue\Console\FailedTableCommand">FailedTableCommand</abbr>#name</a> &mdash; <em>Property in class <a href="Illuminate/Queue/Console/FailedTableCommand.html"><abbr title="Illuminate\Queue\Console\FailedTableCommand">FailedTableCommand</abbr></a></em></dt>
                     <dd><p>The console command name.</p></dd><dt>$<a href="Illuminate/Queue/Console/FlushFailedCommand.html#property_name">
@@ -11491,7 +11499,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Config\Repository">Repository</abbr>::offsetUnset</a>() &mdash; <em>Method in class <a href="Illuminate/Config/Repository.html"><abbr title="Illuminate\Config\Repository">Repository</abbr></a></em></dt>
                     <dd><p>Unset a configuration option.</p></dd><dt><a href="Illuminate/Console/Application.html#method_output">
 <abbr title="Illuminate\Console\Application">Application</abbr>::output</a>() &mdash; <em>Method in class <a href="Illuminate/Console/Application.html"><abbr title="Illuminate\Console\Application">Application</abbr></a></em></dt>
-                    <dd><p>Get the output for the last run command.</p></dd><dt>$<a href="Illuminate/Console/Command.html#property_output">
+                    <dd><p>Get the output from the last command.</p></dd><dt>$<a href="Illuminate/Console/Command.html#property_output">
 <abbr title="Illuminate\Console\Command">Command</abbr>#output</a> &mdash; <em>Property in class <a href="Illuminate/Console/Command.html"><abbr title="Illuminate\Console\Command">Command</abbr></a></em></dt>
                     <dd><p>The output interface implementation.</p></dd><dt><a href="Illuminate/Console/Command.html#method_option">
 <abbr title="Illuminate\Console\Command">Command</abbr>::option</a>() &mdash; <em>Method in class <a href="Illuminate/Console/Command.html"><abbr title="Illuminate\Console\Command">Command</abbr></a></em></dt>
@@ -14022,11 +14030,11 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Pagination\AbstractPaginator">AbstractPaginator</abbr>::resolveCurrentPage</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/AbstractPaginator.html"><abbr title="Illuminate\Pagination\AbstractPaginator">AbstractPaginator</abbr></a></em></dt>
                     <dd><p>Resolve the current page or return the default value.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_render">
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::render</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
-                    <dd><p>Render the paginator using the given view.</p></dd><dt><a href="Illuminate/Pagination/PaginationServiceProvider.html#method_register">
+                    <dd><p>Render the paginator using a given view.</p></dd><dt><a href="Illuminate/Pagination/PaginationServiceProvider.html#method_register">
 <abbr title="Illuminate\Pagination\PaginationServiceProvider">PaginationServiceProvider</abbr>::register</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/PaginationServiceProvider.html"><abbr title="Illuminate\Pagination\PaginationServiceProvider">PaginationServiceProvider</abbr></a></em></dt>
                     <dd><p>Register the service provider.</p></dd><dt><a href="Illuminate/Pagination/Paginator.html#method_render">
 <abbr title="Illuminate\Pagination\Paginator">Paginator</abbr>::render</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/Paginator.html"><abbr title="Illuminate\Pagination\Paginator">Paginator</abbr></a></em></dt>
-                    <dd><p>Render the paginator using the given view.</p></dd><dt><a href="Illuminate/Pipeline/PipelineServiceProvider.html#method_register">
+                    <dd><p>Render the paginator using a given view.</p></dd><dt><a href="Illuminate/Pipeline/PipelineServiceProvider.html#method_register">
 <abbr title="Illuminate\Pipeline\PipelineServiceProvider">PipelineServiceProvider</abbr>::register</a>() &mdash; <em>Method in class <a href="Illuminate/Pipeline/PipelineServiceProvider.html"><abbr title="Illuminate\Pipeline\PipelineServiceProvider">PipelineServiceProvider</abbr></a></em></dt>
                     <dd><p>Register the service provider.</p></dd><dt><a href="Illuminate/Queue/CallQueuedHandler.html#method_resolveHandler">
 <abbr title="Illuminate\Queue\CallQueuedHandler">CallQueuedHandler</abbr>::resolveHandler</a>() &mdash; <em>Method in class <a href="Illuminate/Queue/CallQueuedHandler.html"><abbr title="Illuminate\Queue\CallQueuedHandler">CallQueuedHandler</abbr></a></em></dt>
@@ -14648,7 +14656,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\View\FileViewFinder">FileViewFinder</abbr>::replaceNamespace</a>() &mdash; <em>Method in class <a href="Illuminate/View/FileViewFinder.html"><abbr title="Illuminate\View\FileViewFinder">FileViewFinder</abbr></a></em></dt>
                     <dd><p>Replace the namespace hints for the given namespace.</p></dd><dt><a href="Illuminate/View/View.html#method_render">
 <abbr title="Illuminate\View\View">View</abbr>::render</a>() &mdash; <em>Method in class <a href="Illuminate/View/View.html"><abbr title="Illuminate\View\View">View</abbr></a></em></dt>
-                    <dd><p>Get the string contents of the view.</p></dd><dt><a href="Illuminate/View/View.html#method_renderContents">
+                    <dd><p>Get the evaluated contents of the object.</p></dd><dt><a href="Illuminate/View/View.html#method_renderContents">
 <abbr title="Illuminate\View\View">View</abbr>::renderContents</a>() &mdash; <em>Method in class <a href="Illuminate/View/View.html"><abbr title="Illuminate\View\View">View</abbr></a></em></dt>
                     <dd><p>Get the contents of the view instance.</p></dd><dt><a href="Illuminate/View/View.html#method_renderSections">
 <abbr title="Illuminate\View\View">View</abbr>::renderSections</a>() &mdash; <em>Method in class <a href="Illuminate/View/View.html"><abbr title="Illuminate\View\View">View</abbr></a></em></dt>
@@ -16408,9 +16416,9 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>#traitInitializers</a> &mdash; <em>Property in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
                     <dd><p>The array of trait initializers that will be called on each new instance.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_toArray">
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
-                    <dd><p>Convert the model instance to an array.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_toJson">
+                    <dd><p>Get the instance as an array.</p></dd><dt><a href="Illuminate/Database/Eloquent/Model.html#method_toJson">
 <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Model.html"><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr></a></em></dt>
-                    <dd><p>Convert the model instance to JSON.</p></dd><dt>$<a href="Illuminate/Database/Eloquent/Relations/BelongsToMany.html#property_table">
+                    <dd><p>Convert the object to its JSON representation.</p></dd><dt>$<a href="Illuminate/Database/Eloquent/Relations/BelongsToMany.html#property_table">
 <abbr title="Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr>#table</a> &mdash; <em>Property in class <a href="Illuminate/Database/Eloquent/Relations/BelongsToMany.html"><abbr title="Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr></a></em></dt>
                     <dd><p>The intermediate table for the relation.</p></dd><dt><a href="Illuminate/Database/Eloquent/Relations/BelongsToMany.html#method_touchIfTouching">
 <abbr title="Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr>::touchIfTouching</a>() &mdash; <em>Method in class <a href="Illuminate/Database/Eloquent/Relations/BelongsToMany.html"><abbr title="Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr></a></em></dt>
@@ -16892,7 +16900,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
                     <dd><p>Extract the threads value from the options array.</p></dd><dt><a href="Illuminate/Http/Exceptions/ThrottleRequestsException.html"><abbr title="Illuminate\Http\Exceptions\ThrottleRequestsException">ThrottleRequestsException</abbr></a> &mdash; <em>Class in namespace <a href="Illuminate/Http/Exceptions.html">Illuminate\Http\Exceptions</a></em></dt>
                     <dd></dd><dt><a href="Illuminate/Http/Request.html#method_toArray">
 <abbr title="Illuminate\Http\Request">Request</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Illuminate/Http/Request.html"><abbr title="Illuminate\Http\Request">Request</abbr></a></em></dt>
-                    <dd><p>Get all of the input and files for the request.</p></dd><dt><a href="Illuminate/Http/Resources/ConditionallyLoadsAttributes.html#method_transform">
+                    <dd><p>Get the instance as an array.</p></dd><dt><a href="Illuminate/Http/Resources/ConditionallyLoadsAttributes.html#method_transform">
 <abbr title="Illuminate\Http\Resources\ConditionallyLoadsAttributes">ConditionallyLoadsAttributes</abbr>::transform</a>() &mdash; <em>Method in class <a href="Illuminate/Http/Resources/ConditionallyLoadsAttributes.html"><abbr title="Illuminate\Http\Resources\ConditionallyLoadsAttributes">ConditionallyLoadsAttributes</abbr></a></em></dt>
                     <dd><p>Transform the given value if it is present.</p></dd><dt><a href="Illuminate/Http/Resources/Json/JsonResource.html#method_toArray">
 <abbr title="Illuminate\Http\Resources\Json\JsonResource">JsonResource</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Illuminate/Http/Resources/Json/JsonResource.html"><abbr title="Illuminate\Http\Resources\Json\JsonResource">JsonResource</abbr></a></em></dt>
@@ -16902,7 +16910,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Http\Resources\Json\PaginatedResourceResponse">PaginatedResourceResponse</abbr>::toResponse</a>() &mdash; <em>Method in class <a href="Illuminate/Http/Resources/Json/PaginatedResourceResponse.html"><abbr title="Illuminate\Http\Resources\Json\PaginatedResourceResponse">PaginatedResourceResponse</abbr></a></em></dt>
                     <dd><p>Create an HTTP response that represents the object.</p></dd><dt><a href="Illuminate/Http/Resources/Json/ResourceCollection.html#method_toArray">
 <abbr title="Illuminate\Http\Resources\Json\ResourceCollection">ResourceCollection</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Illuminate/Http/Resources/Json/ResourceCollection.html"><abbr title="Illuminate\Http\Resources\Json\ResourceCollection">ResourceCollection</abbr></a></em></dt>
-                    <dd><p>Transform the resource into a JSON array.</p></dd><dt><a href="Illuminate/Http/Resources/Json/ResourceCollection.html#method_toResponse">
+                    <dd><p>Transform the resource into an array.</p></dd><dt><a href="Illuminate/Http/Resources/Json/ResourceCollection.html#method_toResponse">
 <abbr title="Illuminate\Http\Resources\Json\ResourceCollection">ResourceCollection</abbr>::toResponse</a>() &mdash; <em>Method in class <a href="Illuminate/Http/Resources/Json/ResourceCollection.html"><abbr title="Illuminate\Http\Resources\Json\ResourceCollection">ResourceCollection</abbr></a></em></dt>
                     <dd><p>Create an HTTP response that represents the object.</p></dd><dt><a href="Illuminate/Http/Resources/Json/ResourceResponse.html#method_toResponse">
 <abbr title="Illuminate\Http\Resources\Json\ResourceResponse">ResourceResponse</abbr>::toResponse</a>() &mdash; <em>Method in class <a href="Illuminate/Http/Resources/Json/ResourceResponse.html"><abbr title="Illuminate\Http\Resources\Json\ResourceResponse">ResourceResponse</abbr></a></em></dt>
@@ -16966,7 +16974,7 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>#total</a> &mdash; <em>Property in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
                     <dd><p>The total number of items before slicing.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_total">
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::total</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
-                    <dd><p>Get the total number of items being paginated.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_toArray">
+                    <dd><p>Determine the total number of items in the data store.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_toArray">
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
                     <dd><p>Get the instance as an array.</p></dd><dt><a href="Illuminate/Pagination/LengthAwarePaginator.html#method_toJson">
 <abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Illuminate/Pagination/LengthAwarePaginator.html"><abbr title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</abbr></a></em></dt>
@@ -17050,9 +17058,9 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Support\Collection">Collection</abbr>::transform</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a></em></dt>
                     <dd><p>Transform each item in the collection using a callback.</p></dd><dt><a href="Illuminate/Support/Collection.html#method_toArray">
 <abbr title="Illuminate\Support\Collection">Collection</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a></em></dt>
-                    <dd><p>Get the collection of items as a plain array.</p></dd><dt><a href="Illuminate/Support/Collection.html#method_toJson">
+                    <dd><p>Get the instance as an array.</p></dd><dt><a href="Illuminate/Support/Collection.html#method_toJson">
 <abbr title="Illuminate\Support\Collection">Collection</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a></em></dt>
-                    <dd><p>Get the collection of items as JSON.</p></dd><dt><a href="Illuminate/Support/Collection.html#method_toBase">
+                    <dd><p>Convert the object to its JSON representation.</p></dd><dt><a href="Illuminate/Support/Collection.html#method_toBase">
 <abbr title="Illuminate\Support\Collection">Collection</abbr>::toBase</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a></em></dt>
                     <dd><p>Get a base Support collection instance from this collection.</p></dd><dt><a href="Illuminate/Support/DateFactory.html#method_today">
 <abbr title="Illuminate\Support\DateFactory">DateFactory</abbr>::today</a>() &mdash; <em>Method in class <a href="Illuminate/Support/DateFactory.html"><abbr title="Illuminate\Support\DateFactory">DateFactory</abbr></a></em></dt>
@@ -17096,9 +17104,9 @@ be logged and monitored.</p></dd><dt><a href="Illuminate/Log/Logger.html#method_
 <abbr title="Illuminate\Support\Facades\URL">URL</abbr>::temporarySignedRoute</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Facades/URL.html"><abbr title="Illuminate\Support\Facades\URL">URL</abbr></a></em></dt>
                     <dd></dd><dt><a href="Illuminate/Support/Fluent.html#method_toArray">
 <abbr title="Illuminate\Support\Fluent">Fluent</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Fluent.html"><abbr title="Illuminate\Support\Fluent">Fluent</abbr></a></em></dt>
-                    <dd><p>Convert the fluent instance to an array.</p></dd><dt><a href="Illuminate/Support/Fluent.html#method_toJson">
+                    <dd><p>Get the instance as an array.</p></dd><dt><a href="Illuminate/Support/Fluent.html#method_toJson">
 <abbr title="Illuminate\Support\Fluent">Fluent</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Illuminate/Support/Fluent.html"><abbr title="Illuminate\Support\Fluent">Fluent</abbr></a></em></dt>
-                    <dd><p>Convert the fluent instance to JSON.</p></dd><dt>$<a href="Illuminate/Support/HigherOrderTapProxy.html#property_target">
+                    <dd><p>Convert the object to its JSON representation.</p></dd><dt>$<a href="Illuminate/Support/HigherOrderTapProxy.html#property_target">
 <abbr title="Illuminate\Support\HigherOrderTapProxy">HigherOrderTapProxy</abbr>#target</a> &mdash; <em>Property in class <a href="Illuminate/Support/HigherOrderTapProxy.html"><abbr title="Illuminate\Support\HigherOrderTapProxy">HigherOrderTapProxy</abbr></a></em></dt>
                     <dd><p>The target being tapped.</p></dd><dt><a href="Illuminate/Support/HtmlString.html#method_toHtml">
 <abbr title="Illuminate\Support\HtmlString">HtmlString</abbr>::toHtml</a>() &mdash; <em>Method in class <a href="Illuminate/Support/HtmlString.html"><abbr title="Illuminate\Support\HtmlString">HtmlString</abbr></a></em></dt>

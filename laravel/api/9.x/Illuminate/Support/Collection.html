@@ -43,6 +43,10 @@
           title="Laravel API (9.x)" />
     <link rel="search"
           type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/10.x/opensearch.xml"
+          title="Laravel API (10.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
           href="https://docs.asper.one/laravel/api/master/opensearch.xml"
           title="Laravel API (master)" />
     </head>
@@ -71,6 +75,9 @@
                                             <option
                             value="../../../9.x/index.html"
                             data-version="9.x" selected>Laravel 9.x</option>
+                                            <option
+                            value="../../../10.x/index.html"
+                            data-version="10.x" >Laravel 10.x</option>
                                             <option
                             value="../../../master/index.html"
                             data-version="master" >Laravel Dev</option>
@@ -125,6 +132,7 @@
                         <li ><a href="../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
                         <li ><a href="../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
                         <li class="active"><a href="../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li ><a href="../../../10.x/index.html" data-version="10.x">Laravel 10.x</a></li>
                         <li ><a href="../../../master/index.html" data-version="master">Laravel Dev</a></li>
                         </ul>
                     </li>
@@ -1332,8 +1340,7 @@
                 <div class="col-md-8">
                     <a href="#method_range">range</a>(int $from, int $to)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Create a collection with the given range.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1343,8 +1350,7 @@
                 <div class="col-md-8">
                     <a href="#method_all">all</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Get all items in the enumerable.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1405,7 +1411,7 @@
                 <div class="col-md-8">
                     <a href="#method_contains">contains</a>($key, mixed $operator = null, mixed $value = null)
         
-                                            <p><p>Determine if an item exists in the collection.</p></p>                </div>
+                                            <p><p>Determine if an item exists in the enumerable.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1446,7 +1452,7 @@
                 <div class="col-md-8">
                     <a href="#method_diff">diff</a>(<abbr title="Illuminate\Contracts\Support\Arrayable&lt;array-key,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr>|<abbr title="Illuminate\Support\iterable&lt;array-key,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr> $items)
         
-                                            <p><p>Get the items in the collection that are not present in the given items.</p></p>                </div>
+                                            <p><p>Get the items that are not present in the given items.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1456,7 +1462,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffUsing">diffUsing</a>(<abbr title="Illuminate\Contracts\Support\Arrayable&lt;array-key,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr>|<abbr title="Illuminate\Support\iterable&lt;array-key,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr> $items, callable $callback)
         
-                                            <p><p>Get the items in the collection that are not present in the given items, using the callback.</p></p>                </div>
+                                            <p><p>Get the items that are not present in the given items, using the callback.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1466,7 +1472,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffAssoc">diffAssoc</a>(<abbr title="Illuminate\Contracts\Support\Arrayable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr>|<abbr title="Illuminate\Support\iterable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr> $items)
         
-                                            <p><p>Get the items in the collection whose keys and values are not present in the given items.</p></p>                </div>
+                                            <p><p>Get the items whose keys and values are not present in the given items.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1476,7 +1482,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffAssocUsing">diffAssocUsing</a>(<abbr title="Illuminate\Contracts\Support\Arrayable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr>|<abbr title="Illuminate\Support\iterable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr> $items, callable $callback)
         
-                                            <p><p>Get the items in the collection whose keys and values are not present in the given items, using the callback.</p></p>                </div>
+                                            <p><p>Get the items whose keys and values are not present in the given items, using the callback.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1486,7 +1492,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffKeys">diffKeys</a>(<abbr title="Illuminate\Contracts\Support\Arrayable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr>|<abbr title="Illuminate\Support\iterable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr> $items)
         
-                                            <p><p>Get the items in the collection whose keys are not present in the given items.</p></p>                </div>
+                                            <p><p>Get the items whose keys are not present in the given items.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1496,7 +1502,7 @@
                 <div class="col-md-8">
                     <a href="#method_diffKeysUsing">diffKeysUsing</a>(<abbr title="Illuminate\Contracts\Support\Arrayable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr>|<abbr title="Illuminate\Support\iterable&lt;\Illuminate\Support\TKey,\Illuminate\Support\TValue&gt;">TValue&gt;</abbr> $items, callable $callback)
         
-                                            <p><p>Get the items in the collection whose keys are not present in the given items, using the callback.</p></p>                </div>
+                                            <p><p>Get the items whose keys are not present in the given items, using the callback.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1506,7 +1512,7 @@
                 <div class="col-md-8">
                     <a href="#method_duplicates">duplicates</a>($callback = null, bool $strict = false)
         
-                                            <p><p>Retrieve duplicate items from the collection.</p></p>                </div>
+                                            <p><p>Retrieve duplicate items.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1516,7 +1522,7 @@
                 <div class="col-md-8">
                     <a href="#method_duplicatesStrict">duplicatesStrict</a>($callback = null)
         
-                                            <p><p>Retrieve duplicate items from the collection using strict comparison.</p></p>                </div>
+                                            <p><p>Retrieve duplicate items using strict comparison.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1567,8 +1573,7 @@
                 <div class="col-md-8">
                     <a href="#method_flatten">flatten</a>(int $depth = INF)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Get a flattened array of the items in the collection.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -2055,7 +2060,7 @@
                 <div class="col-md-8">
                     <a href="#method_slice">slice</a>(int $offset, int|null $length = null)
         
-                                            <p><p>Slice the underlying collection array.</p></p>                </div>
+                                            <p><p>Get a slice of items from the enumerable.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -2302,7 +2307,7 @@
                 <div class="col-md-8">
                     <a href="#method_getIterator">getIterator</a>()
         
-                                            <p><p>Get an iterator for the items.</p></p>                </div>
+                                            <p><p>Get the values iterator.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -5578,8 +5583,7 @@
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Create a collection with the given range.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -5626,8 +5630,7 @@
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Get all items in the enumerable.</p></p>                        
         </div>
         <div class="tags">
             
@@ -5841,7 +5844,7 @@
             
 
         <div class="method-description">
-                            <p><p>Determine if an item exists in the collection.</p></p>                        
+                            <p><p>Determine if an item exists in the enumerable.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6026,7 +6029,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection that are not present in the given items.</p></p>                        
+                            <p><p>Get the items that are not present in the given items.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6068,7 +6071,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection that are not present in the given items, using the callback.</p></p>                        
+                            <p><p>Get the items that are not present in the given items, using the callback.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6115,7 +6118,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys and values are not present in the given items.</p></p>                        
+                            <p><p>Get the items whose keys and values are not present in the given items.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6157,7 +6160,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys and values are not present in the given items, using the callback.</p></p>                        
+                            <p><p>Get the items whose keys and values are not present in the given items, using the callback.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6204,7 +6207,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys are not present in the given items.</p></p>                        
+                            <p><p>Get the items whose keys are not present in the given items.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6246,7 +6249,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get the items in the collection whose keys are not present in the given items, using the callback.</p></p>                        
+                            <p><p>Get the items whose keys are not present in the given items, using the callback.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6293,7 +6296,7 @@
             
 
         <div class="method-description">
-                            <p><p>Retrieve duplicate items from the collection.</p></p>                        
+                            <p><p>Retrieve duplicate items.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6340,7 +6343,7 @@
             
 
         <div class="method-description">
-                            <p><p>Retrieve duplicate items from the collection using strict comparison.</p></p>                        
+                            <p><p>Retrieve duplicate items using strict comparison.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -6538,8 +6541,7 @@
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Get a flattened array of the items in the collection.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -8402,7 +8404,7 @@
             
 
         <div class="method-description">
-                            <p><p>Slice the underlying collection array.</p></p>                        
+                            <p><p>Get a slice of items from the enumerable.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -9416,7 +9418,7 @@
             
 
         <div class="method-description">
-                            <p><p>Get an iterator for the items.</p></p>                        
+                            <p><p>Get the values iterator.</p></p>                        
         </div>
         <div class="tags">
             
