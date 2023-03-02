@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\View\AnonymousComponent | Laravel API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.5/opensearch.xml"
+          title="Laravel API (5.5)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.8/opensearch.xml"
+          title="Laravel API (5.8)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/6.x/opensearch.xml"
+          title="Laravel API (6.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/7.x/opensearch.xml"
+          title="Laravel API (7.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/8.x/opensearch.xml"
+          title="Laravel API (8.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/9.x/opensearch.xml"
+          title="Laravel API (9.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/master/opensearch.xml"
+          title="Laravel API (master)" />
+    </head>
+
+    <body id="class" data-name="class:Illuminate_View_AnonymousComponent" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select class="form-control" id="version-switcher" name="version">
+                                            <option
+                            value="../../../5.5/index.html"
+                            data-version="5.5" >Laravel 5.5</option>
+                                            <option
+                            value="../../../5.8/index.html"
+                            data-version="5.8" >Laravel 5.8</option>
+                                            <option
+                            value="../../../6.x/index.html"
+                            data-version="6.x" >Laravel 6.x</option>
+                                            <option
+                            value="../../../7.x/index.html"
+                            data-version="7.x" >Laravel 7.x</option>
+                                            <option
+                            value="../../../8.x/index.html"
+                            data-version="8.x" >Laravel 8.x</option>
+                                            <option
+                            value="../../../9.x/index.html"
+                            data-version="9.x" selected>Laravel 9.x</option>
+                                            <option
+                            value="../../../master/index.html"
+                            data-version="master" >Laravel Dev</option>
+                                    </select>
+            </form>
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Laravel API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                                        <li role="presentation" class="dropdown visible-xs-block visible-sm-block">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Versions&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li ><a href="../../../5.5/index.html" data-version="5.5">Laravel 5.5</a></li>
+                        <li ><a href="../../../5.8/index.html" data-version="5.8">Laravel 5.8</a></li>
+                        <li ><a href="../../../6.x/index.html" data-version="6.x">Laravel 6.x</a></li>
+                        <li ><a href="../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
+                        <li ><a href="../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
+                        <li class="active"><a href="../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li ><a href="../../../master/index.html" data-version="master">Laravel Dev</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../Illuminate/View.html">View</a></li><li class="backslash">\</li><li>AnonymousComponent</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>AnonymousComponent    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>AnonymousComponent</strong>        extends <a href="../../Illuminate/View/Component.html"><abbr title="Illuminate\View\Component">Component</abbr></a>        (<a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/AnonymousComponent.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_except">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$except</td>
+                <td class="last"><p>The properties / methods that should not be exposed to the component.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_except">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_componentName">
+                                                                                string
+                                                                                
+                                    </td>
+                <td>$componentName</td>
+                <td class="last"><p>The component alias name.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_componentName">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attributes">
+                                                                                <a href="../../Illuminate/View/ComponentAttributeBag.html"><abbr title="Illuminate\View\ComponentAttributeBag">ComponentAttributeBag</abbr></a>
+                                                                                
+                                    </td>
+                <td>$attributes</td>
+                <td class="last"><p>The component attributes.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_attributes">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_factory">
+                    static                    protected                                        <a href="../../Illuminate/Contracts/View/Factory.html"><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></a>|null
+                                                                                
+                                    </td>
+                <td>$factory</td>
+                <td class="last"><p>The view factory instance, if any.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_factory">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_componentsResolver">
+                    static                    protected                                        
+                                                                                
+                                    </td>
+                <td>$componentsResolver</td>
+                <td class="last"><p>The component resolver callback.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_componentsResolver">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bladeViewCache">
+                    static                    protected                                        <abbr title="Illuminate\View\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$bladeViewCache</td>
+                <td class="last"><p>The cache of blade view names, keyed by contents.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_bladeViewCache">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_propertyCache">
+                    static                    protected                                        array
+                                                                                
+                                    </td>
+                <td>$propertyCache</td>
+                <td class="last"><p>The cache of public property names, keyed by class.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_propertyCache">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_methodCache">
+                    static                    protected                                        array
+                                                                                
+                                    </td>
+                <td>$methodCache</td>
+                <td class="last"><p>The cache of public method names, keyed by class.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_methodCache">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_constructorParametersCache">
+                    static                    protected                                        <abbr title="Illuminate\View\array&lt;class-string,array&lt;int,string&gt;&gt;">array&lt;class-string,array&lt;int,string&gt;&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$constructorParametersCache</td>
+                <td class="last"><p>The cache of constructor parameters, keyed by class.</p></td>
+                <td><small>from&nbsp;<a href="../../Illuminate/View/Component.html#property_constructorParametersCache">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_view">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$view</td>
+                <td class="last"><p>The component view.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_data">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$data</td>
+                <td class="last"><p>The component data.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>|<a href="../../Illuminate/Contracts/Support/Htmlable.html"><abbr title="Illuminate\Contracts\Support\Htmlable">Htmlable</abbr></a>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_render">render</a>()
+        
+                                            <p><p>Get the view / view contents that represent the component.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Illuminate/View/Component.html"><abbr title="Illuminate\View\Component">Component</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resolve">resolve</a>(array $data)
+        
+                                            <p><p>Resolve the component instance with the given data.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_resolve">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extractConstructorParameters">extractConstructorParameters</a>()
+        
+                                            <p><p>Extract the constructor parameters for the component.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_extractConstructorParameters">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>|<a href="../../Illuminate/Contracts/Support/Htmlable.html"><abbr title="Illuminate\Contracts\Support\Htmlable">Htmlable</abbr></a>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resolveView">resolveView</a>()
+        
+                                            <p><p>Resolve the Blade view or view file that should be used when rendering the component.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_resolveView">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extractBladeViewFromString">extractBladeViewFromString</a>(string $contents)
+        
+                                            <p><p>Create a Blade view with the raw component string content.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_extractBladeViewFromString">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createBladeViewFromString">createBladeViewFromString</a>(<a href="../../Illuminate/Contracts/View/Factory.html"><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></a> $factory, string $contents)
+        
+                                            <p><p>Create a Blade view with the raw component string content.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_createBladeViewFromString">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_data">data</a>()
+        
+                                            <p><p>Get the data that should be supplied to the view.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extractPublicProperties">extractPublicProperties</a>()
+        
+                                            <p><p>Extract the public properties for the component.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_extractPublicProperties">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extractPublicMethods">extractPublicMethods</a>()
+        
+                                            <p><p>Extract the public methods for the component.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_extractPublicMethods">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createVariableFromMethod">createVariableFromMethod</a>(<a target="_blank" rel="noopener" href="https://www.php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        
+                                            <p><p>Create a callable variable from the given method.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_createVariableFromMethod">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Illuminate/View/InvokableComponentVariable.html"><abbr title="Illuminate\View\InvokableComponentVariable">InvokableComponentVariable</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createInvokableVariable">createInvokableVariable</a>(string $method)
+        
+                                            <p><p>Create an invokable, toStringable variable for the given component method.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_createInvokableVariable">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_shouldIgnore">shouldIgnore</a>(string $name)
+        
+                                            <p><p>Determine if the given property / method should be ignored.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_shouldIgnore">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ignoredMethods">ignoredMethods</a>()
+        
+                                            <p><p>Get the methods that should be ignored.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_ignoredMethods">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withName">withName</a>(string $name)
+        
+                                            <p><p>Set the component alias name.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_withName">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withAttributes">withAttributes</a>(array $attributes)
+        
+                                            <p><p>Set the extra attributes that the component should make available.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_withAttributes">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Illuminate/View/ComponentAttributeBag.html"><abbr title="Illuminate\View\ComponentAttributeBag">ComponentAttributeBag</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_newAttributeBag">newAttributeBag</a>(array $attributes = [])
+        
+                                            <p><p>Get a new attribute bag instance.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_newAttributeBag">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_shouldRender">shouldRender</a>()
+        
+                                            <p><p>Determine if the component should be rendered.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_shouldRender">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_view">view</a>(string|null $view, <a href="../../Illuminate/Contracts/Support/Arrayable.html"><abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr></a>|array $data = [], array $mergeData = [])
+        
+                                            <p><p>Get the evaluated view contents for the given view.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_view">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Illuminate/Contracts/View/Factory.html"><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_factory">factory</a>()
+        
+                                            <p><p>Get the view factory instance.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_factory">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushCache">flushCache</a>()
+        
+                                            <p><p>Flush the component's cached state.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_flushCache">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_forgetFactory">forgetFactory</a>()
+        
+                                            <p><p>Forget the component's factory instance.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_forgetFactory">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_forgetComponentsResolver">forgetComponentsResolver</a>()
+        
+                                            <p><p>Forget the component's resolver callback.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_forgetComponentsResolver">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_resolveComponentsUsing">resolveComponentsUsing</a>($resolver)
+        
+                                            <p><p>Set the callback that should be used to resolve components within views.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Illuminate/View/Component.html#method_resolveComponentsUsing">
+<abbr title="Illuminate\View\Component">Component</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(string $view, array $data)
+        
+                                            <p><p>Create a new anonymous component instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/AnonymousComponent.php#L39">at line 39</a></div>
+        <code>                    <a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>|<a href="../../Illuminate/Contracts/Support/Htmlable.html"><abbr title="Illuminate\Contracts\Support\Htmlable">Htmlable</abbr></a>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string
+    <strong>render</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the view / view contents that represent the component.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>|<a href="../../Illuminate/Contracts/Support/Htmlable.html"><abbr title="Illuminate\Contracts\Support\Htmlable">Htmlable</abbr></a>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_resolve">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L91">at line 91</a></div>
+        <code>        static            <a href="../../Illuminate/View/Component.html"><abbr title="Illuminate\View\Component">Component</abbr></a>
+    <strong>resolve</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resolve the component instance with the given data.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/View/Component.html"><abbr title="Illuminate\View\Component">Component</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractConstructorParameters">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_extractConstructorParameters">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L113">at line 113</a></div>
+        <code>        static    protected        array
+    <strong>extractConstructorParameters</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Extract the constructor parameters for the component.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveView">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_resolveView">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L133">at line 133</a></div>
+        <code>                    <a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>|<a href="../../Illuminate/Contracts/Support/Htmlable.html"><abbr title="Illuminate\Contracts\Support\Htmlable">Htmlable</abbr></a>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string
+    <strong>resolveView</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resolve the Blade view or view file that should be used when rendering the component.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>|<a href="../../Illuminate/Contracts/Support/Htmlable.html"><abbr title="Illuminate\Contracts\Support\Htmlable">Htmlable</abbr></a>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractBladeViewFromString">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_extractBladeViewFromString">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L161">at line 161</a></div>
+        <code>            protected        string
+    <strong>extractBladeViewFromString</strong>(string $contents)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a Blade view with the raw component string content.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createBladeViewFromString">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_createBladeViewFromString">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L183">at line 183</a></div>
+        <code>            protected        string
+    <strong>createBladeViewFromString</strong>(<a href="../../Illuminate/Contracts/View/Factory.html"><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></a> $factory, string $contents)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a Blade view with the raw component string content.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Illuminate/Contracts/View/Factory.html"><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></a></td>
+                <td>$factory</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_data">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/AnonymousComponent.php#L49">at line 49</a></div>
+        <code>                    array
+    <strong>data</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the data that should be supplied to the view.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractPublicProperties">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_extractPublicProperties">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L221">at line 221</a></div>
+        <code>            protected        array
+    <strong>extractPublicProperties</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Extract the public properties for the component.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractPublicMethods">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_extractPublicMethods">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L254">at line 254</a></div>
+        <code>            protected        array
+    <strong>extractPublicMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Extract the public methods for the component.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createVariableFromMethod">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_createVariableFromMethod">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L285">at line 285</a></div>
+        <code>            protected        mixed
+    <strong>createVariableFromMethod</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/ReflectionMethod">ReflectionMethod</a> $method)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a callable variable from the given method.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionMethod">ReflectionMethod</a></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createInvokableVariable">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_createInvokableVariable">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L298">at line 298</a></div>
+        <code>            protected        <a href="../../Illuminate/View/InvokableComponentVariable.html"><abbr title="Illuminate\View\InvokableComponentVariable">InvokableComponentVariable</abbr></a>
+    <strong>createInvokableVariable</strong>(string $method)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create an invokable, toStringable variable for the given component method.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/View/InvokableComponentVariable.html"><abbr title="Illuminate\View\InvokableComponentVariable">InvokableComponentVariable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldIgnore">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_shouldIgnore">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L311">at line 311</a></div>
+        <code>            protected        bool
+    <strong>shouldIgnore</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the given property / method should be ignored.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignoredMethods">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_ignoredMethods">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L322">at line 322</a></div>
+        <code>            protected        array
+    <strong>ignoredMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the methods that should be ignored.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withName">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_withName">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L341">at line 341</a></div>
+        <code>                    $this
+    <strong>withName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the component alias name.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withAttributes">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_withAttributes">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L354">at line 354</a></div>
+        <code>                    $this
+    <strong>withAttributes</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the extra attributes that the component should make available.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newAttributeBag">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_newAttributeBag">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L369">at line 369</a></div>
+        <code>            protected        <a href="../../Illuminate/View/ComponentAttributeBag.html"><abbr title="Illuminate\View\ComponentAttributeBag">ComponentAttributeBag</abbr></a>
+    <strong>newAttributeBag</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get a new attribute bag instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/View/ComponentAttributeBag.html"><abbr title="Illuminate\View\ComponentAttributeBag">ComponentAttributeBag</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldRender">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_shouldRender">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L379">at line 379</a></div>
+        <code>                    bool
+    <strong>shouldRender</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if the component should be rendered.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_view">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_view">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L392">at line 392</a></div>
+        <code>                    <a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a>
+    <strong>view</strong>(string|null $view, <a href="../../Illuminate/Contracts/Support/Arrayable.html"><abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr></a>|array $data = [], array $mergeData = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the evaluated view contents for the given view.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Illuminate/Contracts/Support/Arrayable.html"><abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr></a>|array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mergeData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/Contracts/View/View.html"><abbr title="Illuminate\Contracts\View\View">View</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_factory">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_factory">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L402">at line 402</a></div>
+        <code>            protected        <a href="../../Illuminate/Contracts/View/Factory.html"><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></a>
+    <strong>factory</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the view factory instance.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Illuminate/Contracts/View/Factory.html"><abbr title="Illuminate\Contracts\View\Factory">Factory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushCache">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_flushCache">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L416">at line 416</a></div>
+        <code>        static            void
+    <strong>flushCache</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flush the component's cached state.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_forgetFactory">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_forgetFactory">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L429">at line 429</a></div>
+        <code>        static            void
+    <strong>forgetFactory</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Forget the component's factory instance.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_forgetComponentsResolver">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_forgetComponentsResolver">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L441">at line 441</a></div>
+        <code>        static            void
+    <strong>forgetComponentsResolver</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+                            <table>
+            <tr>
+                <td><span class="label label-warning">internal</span></td>
+                <td>&nbsp; </td>
+            </tr>
+        </table>
+                &nbsp;
+    
+
+        <div class="method-description">
+                            <p><p>Forget the component's resolver callback.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveComponentsUsing">
+        <div class="location">in <a href="../../Illuminate/View/Component.html#method_resolveComponentsUsing">
+<abbr title="Illuminate\View\Component">Component</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/Component.php#L454">at line 454</a></div>
+        <code>        static            void
+    <strong>resolveComponentsUsing</strong>($resolver)
+        </code>
+    </h3>
+    <div class="details">    
+    
+                            <table>
+            <tr>
+                <td><span class="label label-warning">internal</span></td>
+                <td>&nbsp; </td>
+            </tr>
+        </table>
+                &nbsp;
+    
+
+        <div class="method-description">
+                            <p><p>Set the callback that should be used to resolve components within views.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$resolver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/View/AnonymousComponent.php#L28">at line 28</a></div>
+        <code>                    void
+    <strong>__construct</strong>(string $view, array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new anonymous component instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

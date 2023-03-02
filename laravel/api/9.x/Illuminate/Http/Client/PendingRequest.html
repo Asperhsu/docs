@@ -1,0 +1,4526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Http\Client\PendingRequest | Laravel API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.5/opensearch.xml"
+          title="Laravel API (5.5)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.8/opensearch.xml"
+          title="Laravel API (5.8)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/6.x/opensearch.xml"
+          title="Laravel API (6.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/7.x/opensearch.xml"
+          title="Laravel API (7.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/8.x/opensearch.xml"
+          title="Laravel API (8.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/9.x/opensearch.xml"
+          title="Laravel API (9.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/master/opensearch.xml"
+          title="Laravel API (master)" />
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Http_Client_PendingRequest" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select class="form-control" id="version-switcher" name="version">
+                                            <option
+                            value="../../../../5.5/index.html"
+                            data-version="5.5" >Laravel 5.5</option>
+                                            <option
+                            value="../../../../5.8/index.html"
+                            data-version="5.8" >Laravel 5.8</option>
+                                            <option
+                            value="../../../../6.x/index.html"
+                            data-version="6.x" >Laravel 6.x</option>
+                                            <option
+                            value="../../../../7.x/index.html"
+                            data-version="7.x" >Laravel 7.x</option>
+                                            <option
+                            value="../../../../8.x/index.html"
+                            data-version="8.x" >Laravel 8.x</option>
+                                            <option
+                            value="../../../../9.x/index.html"
+                            data-version="9.x" selected>Laravel 9.x</option>
+                                            <option
+                            value="../../../../master/index.html"
+                            data-version="master" >Laravel Dev</option>
+                                    </select>
+            </form>
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Laravel API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                                        <li role="presentation" class="dropdown visible-xs-block visible-sm-block">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Versions&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li ><a href="../../../../5.5/index.html" data-version="5.5">Laravel 5.5</a></li>
+                        <li ><a href="../../../../5.8/index.html" data-version="5.8">Laravel 5.8</a></li>
+                        <li ><a href="../../../../6.x/index.html" data-version="6.x">Laravel 6.x</a></li>
+                        <li ><a href="../../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
+                        <li ><a href="../../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
+                        <li class="active"><a href="../../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li ><a href="../../../../master/index.html" data-version="master">Laravel Dev</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../Illuminate/Http/Client.html">Client</a></li><li class="backslash">\</li><li>PendingRequest</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>PendingRequest    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>PendingRequest</strong>        (<a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Support/Traits/Conditionable.html"><abbr title="Illuminate\Support\Traits\Conditionable">Conditionable</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Illuminate/Support/Traits/Macroable.html"><abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_macros">
+                    static                    protected                                        array
+                                                                                
+                                    </td>
+                <td>$macros</td>
+                <td class="last"><p>The registered string macros.</p></td>
+                <td><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#property_macros">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_factory">
+                                        protected                                        <a href="../../../Illuminate/Http/Client/Factory.html"><abbr title="Illuminate\Http\Client\Factory">Factory</abbr></a>|null
+                                                                                
+                                    </td>
+                <td>$factory</td>
+                <td class="last"><p>The factory instance.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_client">
+                                        protected                                        <abbr title="GuzzleHttp\Client">Client</abbr>
+                                                                                
+                                    </td>
+                <td>$client</td>
+                <td class="last"><p>The Guzzle client instance.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_handler">
+                                        protected                                        callable
+                                                                                
+                                    </td>
+                <td>$handler</td>
+                <td class="last"><p>The Guzzle HTTP handler.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_baseUrl">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$baseUrl</td>
+                <td class="last"><p>The base URL for the request.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_urlParameters">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$urlParameters</td>
+                <td class="last"><p>The parameters that can be substituted into the URL.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bodyFormat">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$bodyFormat</td>
+                <td class="last"><p>The request body format.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pendingBody">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$pendingBody</td>
+                <td class="last"><p>The raw body for the request.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pendingFiles">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$pendingFiles</td>
+                <td class="last"><p>The pending files for the request.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cookies">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$cookies</td>
+                <td class="last"><p>The request cookies.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_transferStats">
+                                        protected                                        <abbr title="GuzzleHttp\TransferStats">TransferStats</abbr>
+                                                                                
+                                    </td>
+                <td>$transferStats</td>
+                <td class="last"><p>The transfer stats for the request.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$options</td>
+                <td class="last"><p>The request options.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_throwCallback">
+                                        protected                                        <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                                                                                
+                                    </td>
+                <td>$throwCallback</td>
+                <td class="last"><p>A callback to run when throwing if a server or client error occurs.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_throwIfCallback">
+                                        protected                                        <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                                                                                
+                                    </td>
+                <td>$throwIfCallback</td>
+                <td class="last"><p>A callback to check if an exception should be thrown when a server or client error occurs.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tries">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$tries</td>
+                <td class="last"><p>The number of times to try the request.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_retryDelay">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$retryDelay</td>
+                <td class="last"><p>The number of milliseconds to wait between retries.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_retryThrow">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$retryThrow</td>
+                <td class="last"><p>Whether to throw an exception when all retries fail.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_retryWhenCallback">
+                                        protected                                        callable|null
+                                                                                
+                                    </td>
+                <td>$retryWhenCallback</td>
+                <td class="last"><p>The callback that will determine if the request should be retried.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_beforeSendingCallbacks">
+                                        protected                                        <a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a>
+                                                                                
+                                    </td>
+                <td>$beforeSendingCallbacks</td>
+                <td class="last"><p>The callbacks that should execute before the request is sent.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stubCallbacks">
+                                        protected                                        <a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a>|null
+                                                                                
+                                    </td>
+                <td>$stubCallbacks</td>
+                <td class="last"><p>The stub callables that will handle requests.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_preventStrayRequests">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$preventStrayRequests</td>
+                <td class="last"><p>Indicates that an exception should be thrown if any request is not faked.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_middleware">
+                                        protected                                        <a href="../../../Illuminate/Support/Collection.html"><abbr title="Illuminate\Support\Collection">Collection</abbr></a>
+                                                                                
+                                    </td>
+                <td>$middleware</td>
+                <td class="last"><p>The middleware callables added by users that will handle requests.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_async">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$async</td>
+                <td class="last"><p>Whether the requests should be asynchronous.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_promise">
+                                        protected                                        <abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>
+                                                                                
+                                    </td>
+                <td>$promise</td>
+                <td class="last"><p>The pending request promise.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request">
+                                        protected                                        <a href="../../../Illuminate/Http/Client/Request.html"><abbr title="Illuminate\Http\Client\Request">Request</abbr></a>|null
+                                                                                
+                                    </td>
+                <td>$request</td>
+                <td class="last"><p>The sent request object, if a request has been made.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mergableOptions">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$mergableOptions</td>
+                <td class="last"><p>The Guzzle request options that are mergable via array_merge_recursive.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this|<abbr title="Illuminate\Support\Traits\TWhenReturnType">TWhenReturnType</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_when">when</a>($value = null, callable $callback = null, callable $default = null)
+        
+                                            <p><p>Apply the callback if the given &quot;value&quot; is (or resolves to) truthy.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Conditionable.html#method_when">
+<abbr title="Illuminate\Support\Traits\Conditionable">Conditionable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this|<abbr title="Illuminate\Support\Traits\TUnlessReturnType">TUnlessReturnType</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unless">unless</a>($value = null, callable $callback = null, callable $default = null)
+        
+                                            <p><p>Apply the callback if the given &quot;value&quot; is (or resolves to) falsy.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Conditionable.html#method_unless">
+<abbr title="Illuminate\Support\Traits\Conditionable">Conditionable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_macro">macro</a>(string $name, object|callable $macro)
+        
+                                            <p><p>Register a custom macro.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_macro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mixin">mixin</a>(object $mixin, bool $replace = true)
+        
+                                            <p><p>Mix another object into the class.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_mixin">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasMacro">hasMacro</a>(string $name)
+        
+                                            <p><p>Checks if macro is registered.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_hasMacro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_flushMacros">flushMacros</a>()
+        
+                                            <p><p>Flush the existing macros.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method_flushMacros">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___callStatic">__callStatic</a>(string $method, array $parameters)
+        
+                                            <p><p>Dynamically handle calls to the class.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method___callStatic">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___call">__call</a>(string $method, array $parameters)
+        
+                                            <p><p>Dynamically handle calls to the class.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Illuminate/Support/Traits/Macroable.html#method___call">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Illuminate/Http/Client/Factory.html"><abbr title="Illuminate\Http\Client\Factory">Factory</abbr></a> $factory = null)
+        
+                                            <p><p>Create a new HTTP Client instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_baseUrl">baseUrl</a>(string $url)
+        
+                                            <p><p>Set the base URL for the pending request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withBody">withBody</a>(string $content, string $contentType)
+        
+                                            <p><p>Attach a raw body to the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_asJson">asJson</a>()
+        
+                                            <p><p>Indicate the request contains JSON.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_asForm">asForm</a>()
+        
+                                            <p><p>Indicate the request contains form parameters.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_attach">attach</a>(string|array $name, string|resource $contents = &#039;&#039;, string|null $filename = null, array $headers = [])
+        
+                                            <p><p>Attach a file to the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_asMultipart">asMultipart</a>()
+        
+                                            <p><p>Indicate the request is a multi-part form request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bodyFormat">bodyFormat</a>(string $format)
+        
+                                            <p><p>Specify the body format of the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_contentType">contentType</a>(string $contentType)
+        
+                                            <p><p>Specify the request's content type.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_acceptJson">acceptJson</a>()
+        
+                                            <p><p>Indicate that JSON should be returned by the server.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_accept">accept</a>(string $contentType)
+        
+                                            <p><p>Indicate the type of content that should be returned by the server.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withHeaders">withHeaders</a>(array $headers)
+        
+                                            <p><p>Add the given headers to the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withBasicAuth">withBasicAuth</a>(string $username, string $password)
+        
+                                            <p><p>Specify the basic authentication username and password for the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withDigestAuth">withDigestAuth</a>(string $username, string $password)
+        
+                                            <p><p>Specify the digest authentication username and password for the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withToken">withToken</a>(string $token, string $type = &#039;Bearer&#039;)
+        
+                                            <p><p>Specify an authorization token for the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withUserAgent">withUserAgent</a>(string $userAgent)
+        
+                                            <p><p>Specify the user agent for the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withUrlParameters">withUrlParameters</a>(array $parameters = [])
+        
+                                            <p><p>Specify the URL parameters that can be substituted into the request URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withCookies">withCookies</a>(array $cookies, string $domain)
+        
+                                            <p><p>Specify the cookies that should be included with the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_maxRedirects">maxRedirects</a>(int $max)
+        
+                                            <p><p>Specify the maximum number of redirects to allow.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withoutRedirecting">withoutRedirecting</a>()
+        
+                                            <p><p>Indicate that redirects should not be followed.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withoutVerifying">withoutVerifying</a>()
+        
+                                            <p><p>Indicate that TLS certificates should not be verified.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sink">sink</a>(string|resource $to)
+        
+                                            <p><p>Specify the path where the body of the response should be stored.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_timeout">timeout</a>(int $seconds)
+        
+                                            <p><p>Specify the timeout (in seconds) for the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_connectTimeout">connectTimeout</a>(int $seconds)
+        
+                                            <p><p>Specify the connect timeout (in seconds) for the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_retry">retry</a>(int $times, int $sleepMilliseconds = 0, callable|null $when = null, bool $throw = true)
+        
+                                            <p><p>Specify the number of times the request should be attempted.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withOptions">withOptions</a>(array $options)
+        
+                                            <p><p>Replace the specified options on the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withMiddleware">withMiddleware</a>(callable $middleware)
+        
+                                            <p><p>Add new middleware the client handler stack.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_beforeSending">beforeSending</a>(callable $callback)
+        
+                                            <p><p>Add a new &quot;before sending&quot; callback to the request.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throw">throw</a>(callable $callback = null)
+        
+                                            <p><p>Throw an exception if a server or client error occurs.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throwIf">throwIf</a>(callable|bool $condition)
+        
+                                            <p><p>Throw an exception if a server or client error occurred and the given condition evaluates to true.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_throwUnless">throwUnless</a>(bool $condition)
+        
+                                            <p><p>Throw an exception if a server or client error occurred and the given condition evaluates to false.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dump">dump</a>()
+        
+                                            <p><p>Dump the request before sending.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dd">dd</a>()
+        
+                                            <p><p>Dump the request before sending and end the script.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>(string $url, array|string|null $query = null)
+        
+                                            <p><p>Issue a GET request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_head">head</a>(string $url, array|string|null $query = null)
+        
+                                            <p><p>Issue a HEAD request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_post">post</a>(string $url, array $data = [])
+        
+                                            <p><p>Issue a POST request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_patch">patch</a>(string $url, array $data = [])
+        
+                                            <p><p>Issue a PATCH request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_put">put</a>(string $url, array $data = [])
+        
+                                            <p><p>Issue a PUT request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $url, array $data = [])
+        
+                                            <p><p>Issue a DELETE request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_pool">pool</a>(callable $callback)
+        
+                                            <p><p>Send a pool of asynchronous requests concurrently.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_send">send</a>(string $method, string $url, array $options = [])
+        
+                                            <p><p>Send the request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_expandUrlParameters">expandUrlParameters</a>(string $url)
+        
+                                            <p><p>Substitute the URL parameters in the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_parseHttpOptions">parseHttpOptions</a>(array $options)
+        
+                                            <p><p>Parse the given HTTP options and set the appropriate additional options.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|array[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_parseMultipartBodyFormat">parseMultipartBodyFormat</a>(array $data)
+        
+                                            <p><p>Parse multi-part form data.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_makePromise">makePromise</a>(string $method, string $url, array $options = [])
+        
+                                            <p><p>Send an asynchronous request to the given URL.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr>|<abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sendRequest">sendRequest</a>(string $method, string $url, array $options = [])
+        
+                                            <p><p>Send a request either synchronously or asynchronously.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_parseRequestData">parseRequestData</a>(string $method, string $url, array $options)
+        
+                                            <p><p>Get the request data as an array so that we can attach it to the request for convenient assertions.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_populateResponse">populateResponse</a>(<a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a> $response)
+        
+                                            <p><p>Populate the given response with additional data.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Client">Client</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildClient">buildClient</a>()
+        
+                                            <p><p>Build the Guzzle client.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requestsReusableClient">requestsReusableClient</a>()
+        
+                                            <p><p>Determine if a reusable client is required.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Client">Client</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReusableClient">getReusableClient</a>()
+        
+                                            <p><p>Retrieve a reusable Guzzle client.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Client">Client</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createClient">createClient</a>(<abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr> $handlerStack)
+        
+                                            <p><p>Create new Guzzle client.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildHandlerStack">buildHandlerStack</a>()
+        
+                                            <p><p>Build the Guzzle client handler stack.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_pushHandlers">pushHandlers</a>(<abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr> $handlerStack)
+        
+                                            <p><p>Add the necessary handlers to the given handler stack.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildBeforeSendingHandler">buildBeforeSendingHandler</a>()
+        
+                                            <p><p>Build the before sending handler.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildRecorderHandler">buildRecorderHandler</a>()
+        
+                                            <p><p>Build the recorder handler.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildStubHandler">buildStubHandler</a>()
+        
+                                            <p><p>Build the stub handler.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sinkStubHandler">sinkStubHandler</a>(string $sink)
+        
+                                            <p><p>Get the sink stub handler callback.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Psr7\RequestInterface">RequestInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_runBeforeSendingCallbacks">runBeforeSendingCallbacks</a>(<abbr title="GuzzleHttp\Psr7\RequestInterface">RequestInterface</abbr> $request, array $options)
+        
+                                            <p><p>Execute the &quot;before sending&quot; callbacks.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeOptions">mergeOptions</a>(array ...$options)
+        
+                                            <p><p>Replace the given options with the current request options.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stub">stub</a>(callable $callback)
+        
+                                            <p><p>Register a stub callable that will intercept requests and be able to return stub responses.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_preventStrayRequests">preventStrayRequests</a>(bool $prevent = true)
+        
+                                            <p><p>Indicate that an exception should be thrown if any request is not faked.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_async">async</a>(bool $async = true)
+        
+                                            <p><p>Toggle asynchronicity in requests.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPromise">getPromise</a>()
+        
+                                            <p><p>Retrieve the pending request promise.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dispatchRequestSendingEvent">dispatchRequestSendingEvent</a>()
+        
+                                            <p><p>Dispatch the RequestSending event if a dispatcher is available.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dispatchResponseReceivedEvent">dispatchResponseReceivedEvent</a>(<a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a> $response)
+        
+                                            <p><p>Dispatch the ResponseReceived event if a dispatcher is available.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dispatchConnectionFailedEvent">dispatchConnectionFailedEvent</a>()
+        
+                                            <p><p>Dispatch the ConnectionFailed event if a dispatcher is available.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setClient">setClient</a>(<abbr title="GuzzleHttp\Client">Client</abbr> $client)
+        
+                                            <p><p>Set the client instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setHandler">setHandler</a>(callable $handler)
+        
+                                            <p><p>Create a new client instance using the given handler.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p><p>Get the pending request options.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_when">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Conditionable.html#method_when">
+<abbr title="Illuminate\Support\Traits\Conditionable">Conditionable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Conditionable/Traits/Conditionable.php#L21">at line 21</a></div>
+        <code>                    $this|<abbr title="Illuminate\Support\Traits\TWhenReturnType">TWhenReturnType</abbr>
+    <strong>when</strong>($value = null, callable $callback = null, callable $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Apply the callback if the given &quot;value&quot; is (or resolves to) truthy.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this|<abbr title="Illuminate\Support\Traits\TWhenReturnType">TWhenReturnType</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unless">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Conditionable.html#method_unless">
+<abbr title="Illuminate\Support\Traits\Conditionable">Conditionable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Conditionable/Traits/Conditionable.php#L53">at line 53</a></div>
+        <code>                    $this|<abbr title="Illuminate\Support\Traits\TUnlessReturnType">TUnlessReturnType</abbr>
+    <strong>unless</strong>($value = null, callable $callback = null, callable $default = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Apply the callback if the given &quot;value&quot; is (or resolves to) falsy.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this|<abbr title="Illuminate\Support\Traits\TUnlessReturnType">TUnlessReturnType</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_macro">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_macro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Macroable/Traits/Macroable.php#L26">at line 26</a></div>
+        <code>        static            void
+    <strong>macro</strong>(string $name, object|callable $macro)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register a custom macro.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object|callable</td>
+                <td>$macro</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mixin">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_mixin">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Macroable/Traits/Macroable.php#L40">at line 40</a></div>
+        <code>        static            void
+    <strong>mixin</strong>(object $mixin, bool $replace = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Mix another object into the class.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$mixin</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMacro">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_hasMacro">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Macroable/Traits/Macroable.php#L60">at line 60</a></div>
+        <code>        static            bool
+    <strong>hasMacro</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks if macro is registered.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushMacros">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method_flushMacros">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Macroable/Traits/Macroable.php#L70">at line 70</a></div>
+        <code>        static            void
+    <strong>flushMacros</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flush the existing macros.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method___callStatic">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Macroable/Traits/Macroable.php#L84">at line 84</a></div>
+        <code>        static            mixed
+    <strong>__callStatic</strong>(string $method, array $parameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dynamically handle calls to the class.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/BadMethodCallException">BadMethodCallException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../Illuminate/Support/Traits/Macroable.html#method___call">
+<abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr></a> <a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Macroable/Traits/Macroable.php#L110">at line 110</a></div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $parameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dynamically handle calls to the class.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/BadMethodCallException">BadMethodCallException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L220">at line 220</a></div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../../Illuminate/Http/Client/Factory.html"><abbr title="Illuminate\Http\Client\Factory">Factory</abbr></a> $factory = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new HTTP Client instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/Factory.html"><abbr title="Illuminate\Http\Client\Factory">Factory</abbr></a></td>
+                <td>$factory</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_baseUrl">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L247">at line 247</a></div>
+        <code>                    $this
+    <strong>baseUrl</strong>(string $url)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the base URL for the pending request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withBody">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L261">at line 261</a></div>
+        <code>                    $this
+    <strong>withBody</strong>(string $content, string $contentType)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Attach a raw body to the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contentType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_asJson">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L277">at line 277</a></div>
+        <code>                    $this
+    <strong>asJson</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate the request contains JSON.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_asForm">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L287">at line 287</a></div>
+        <code>                    $this
+    <strong>asForm</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate the request contains form parameters.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_attach">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L301">at line 301</a></div>
+        <code>                    $this
+    <strong>attach</strong>(string|array $name, string|resource $contents = &#039;&#039;, string|null $filename = null, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Attach a file to the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|resource</td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_asMultipart">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L328">at line 328</a></div>
+        <code>                    $this
+    <strong>asMultipart</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate the request is a multi-part form request.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bodyFormat">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L339">at line 339</a></div>
+        <code>                    $this
+    <strong>bodyFormat</strong>(string $format)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the body format of the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contentType">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L352">at line 352</a></div>
+        <code>                    $this
+    <strong>contentType</strong>(string $contentType)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the request's content type.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$contentType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_acceptJson">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L364">at line 364</a></div>
+        <code>                    $this
+    <strong>acceptJson</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate that JSON should be returned by the server.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_accept">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L375">at line 375</a></div>
+        <code>                    $this
+    <strong>accept</strong>(string $contentType)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate the type of content that should be returned by the server.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$contentType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHeaders">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L386">at line 386</a></div>
+        <code>                    $this
+    <strong>withHeaders</strong>(array $headers)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add the given headers to the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withBasicAuth">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L402">at line 402</a></div>
+        <code>                    $this
+    <strong>withBasicAuth</strong>(string $username, string $password)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the basic authentication username and password for the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withDigestAuth">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L416">at line 416</a></div>
+        <code>                    $this
+    <strong>withDigestAuth</strong>(string $username, string $password)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the digest authentication username and password for the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withToken">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L430">at line 430</a></div>
+        <code>                    $this
+    <strong>withToken</strong>(string $token, string $type = &#039;Bearer&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify an authorization token for the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withUserAgent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L443">at line 443</a></div>
+        <code>                    $this
+    <strong>withUserAgent</strong>(string $userAgent)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the user agent for the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userAgent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withUrlParameters">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L456">at line 456</a></div>
+        <code>                    $this
+    <strong>withUrlParameters</strong>(array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the URL parameters that can be substituted into the request URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withCookies">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L470">at line 470</a></div>
+        <code>                    $this
+    <strong>withCookies</strong>(array $cookies, string $domain)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the cookies that should be included with the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$domain</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_maxRedirects">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L485">at line 485</a></div>
+        <code>                    $this
+    <strong>maxRedirects</strong>(int $max)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the maximum number of redirects to allow.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$max</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutRedirecting">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L497">at line 497</a></div>
+        <code>                    $this
+    <strong>withoutRedirecting</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate that redirects should not be followed.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutVerifying">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L509">at line 509</a></div>
+        <code>                    $this
+    <strong>withoutVerifying</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate that TLS certificates should not be verified.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sink">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L522">at line 522</a></div>
+        <code>                    $this
+    <strong>sink</strong>(string|resource $to)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the path where the body of the response should be stored.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|resource</td>
+                <td>$to</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_timeout">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L535">at line 535</a></div>
+        <code>                    $this
+    <strong>timeout</strong>(int $seconds)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the timeout (in seconds) for the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$seconds</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connectTimeout">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L548">at line 548</a></div>
+        <code>                    $this
+    <strong>connectTimeout</strong>(int $seconds)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the connect timeout (in seconds) for the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$seconds</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_retry">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L564">at line 564</a></div>
+        <code>                    $this
+    <strong>retry</strong>(int $times, int $sleepMilliseconds = 0, callable|null $when = null, bool $throw = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Specify the number of times the request should be attempted.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$times</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$sleepMilliseconds</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable|null</td>
+                <td>$when</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$throw</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withOptions">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L580">at line 580</a></div>
+        <code>                    $this
+    <strong>withOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Replace the specified options on the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withMiddleware">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L596">at line 596</a></div>
+        <code>                    $this
+    <strong>withMiddleware</strong>(callable $middleware)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add new middleware the client handler stack.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$middleware</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beforeSending">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L609">at line 609</a></div>
+        <code>                    $this
+    <strong>beforeSending</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a new &quot;before sending&quot; callback to the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throw">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L622">at line 622</a></div>
+        <code>                    $this
+    <strong>throw</strong>(callable $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if a server or client error occurs.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwIf">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L636">at line 636</a></div>
+        <code>                    $this
+    <strong>throwIf</strong>(callable|bool $condition)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if a server or client error occurred and the given condition evaluates to true.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|bool</td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwUnless">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L651">at line 651</a></div>
+        <code>                    $this
+    <strong>throwUnless</strong>(bool $condition)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Throw an exception if a server or client error occurred and the given condition evaluates to false.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$condition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L661">at line 661</a></div>
+        <code>                    $this
+    <strong>dump</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dump the request before sending.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dd">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L677">at line 677</a></div>
+        <code>                    $this
+    <strong>dd</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dump the request before sending and end the script.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L697">at line 697</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>get</strong>(string $url, array|string|null $query = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Issue a GET request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|string|null</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_head">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L711">at line 711</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>head</strong>(string $url, array|string|null $query = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Issue a HEAD request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|string|null</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_post">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L725">at line 725</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>post</strong>(string $url, array $data = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Issue a POST request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L739">at line 739</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>patch</strong>(string $url, array $data = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Issue a PATCH request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L753">at line 753</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>put</strong>(string $url, array $data = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Issue a PUT request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L767">at line 767</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>delete</strong>(string $url, array $data = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Issue a DELETE request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pool">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L780">at line 780</a></div>
+        <code>                    array
+    <strong>pool</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send a pool of asynchronous requests concurrently.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L803">at line 803</a></div>
+        <code>                    <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>send</strong>(string $method, string $url, array $options = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send the request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expandUrlParameters">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L872">at line 872</a></div>
+        <code>            protected        string
+    <strong>expandUrlParameters</strong>(string $url)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Substitute the URL parameters in the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseHttpOptions">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L883">at line 883</a></div>
+        <code>            protected        array
+    <strong>parseHttpOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Parse the given HTTP options and set the appropriate additional options.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseMultipartBodyFormat">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L916">at line 916</a></div>
+        <code>            protected        array|array[]
+    <strong>parseMultipartBodyFormat</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Parse multi-part form data.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|array[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makePromise">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L931">at line 931</a></div>
+        <code>            protected        <abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>makePromise</strong>(string $method, string $url, array $options = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send an asynchronous request to the given URL.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendRequest">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L955">at line 955</a></div>
+        <code>            protected        <abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr>|<abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>sendRequest</strong>(string $method, string $url, array $options = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send a request either synchronously or asynchronously.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr>|<abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseRequestData">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L977">at line 977</a></div>
+        <code>            protected        array
+    <strong>parseRequestData</strong>(string $method, string $url, array $options)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the request data as an array so that we can attach it to the request for convenient assertions.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateResponse">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1010">at line 1010</a></div>
+        <code>            protected        <a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a>
+    <strong>populateResponse</strong>(<a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a> $response)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Populate the given response with additional data.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildClient">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1024">at line 1024</a></div>
+        <code>                    <abbr title="GuzzleHttp\Client">Client</abbr>
+    <strong>buildClient</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Build the Guzzle client.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Client">Client</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestsReusableClient">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1034">at line 1034</a></div>
+        <code>            protected        bool
+    <strong>requestsReusableClient</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determine if a reusable client is required.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReusableClient">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1044">at line 1044</a></div>
+        <code>            protected        <abbr title="GuzzleHttp\Client">Client</abbr>
+    <strong>getReusableClient</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieve a reusable Guzzle client.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Client">Client</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createClient">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1055">at line 1055</a></div>
+        <code>                    <abbr title="GuzzleHttp\Client">Client</abbr>
+    <strong>createClient</strong>(<abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr> $handlerStack)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create new Guzzle client.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr></td>
+                <td>$handlerStack</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Client">Client</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildHandlerStack">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1068">at line 1068</a></div>
+        <code>                    <abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr>
+    <strong>buildHandlerStack</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Build the Guzzle client handler stack.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pushHandlers">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1079">at line 1079</a></div>
+        <code>                    <abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr>
+    <strong>pushHandlers</strong>(<abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr> $handlerStack)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add the necessary handlers to the given handler stack.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr></td>
+                <td>$handlerStack</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\HandlerStack">HandlerStack</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildBeforeSendingHandler">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1098">at line 1098</a></div>
+        <code>                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+    <strong>buildBeforeSendingHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Build the before sending handler.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildRecorderHandler">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1112">at line 1112</a></div>
+        <code>                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+    <strong>buildRecorderHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Build the recorder handler.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildStubHandler">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1135">at line 1135</a></div>
+        <code>                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+    <strong>buildStubHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Build the stub handler.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sinkStubHandler">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1172">at line 1172</a></div>
+        <code>            protected        <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+    <strong>sinkStubHandler</strong>(string $sink)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the sink stub handler callback.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sink</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runBeforeSendingCallbacks">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1195">at line 1195</a></div>
+        <code>                    <abbr title="GuzzleHttp\Psr7\RequestInterface">RequestInterface</abbr>
+    <strong>runBeforeSendingCallbacks</strong>(<abbr title="GuzzleHttp\Psr7\RequestInterface">RequestInterface</abbr> $request, array $options)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Execute the &quot;before sending&quot; callbacks.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="GuzzleHttp\Psr7\RequestInterface">RequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Psr7\RequestInterface">RequestInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeOptions">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1218">at line 1218</a></div>
+        <code>                    array
+    <strong>mergeOptions</strong>(array ...$options)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Replace the given options with the current request options.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stub">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1232">at line 1232</a></div>
+        <code>                    $this
+    <strong>stub</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register a stub callable that will intercept requests and be able to return stub responses.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preventStrayRequests">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1245">at line 1245</a></div>
+        <code>                    $this
+    <strong>preventStrayRequests</strong>(bool $prevent = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Indicate that an exception should be thrown if any request is not faked.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$prevent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_async">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1258">at line 1258</a></div>
+        <code>                    $this
+    <strong>async</strong>(bool $async = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Toggle asynchronicity in requests.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$async</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPromise">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1270">at line 1270</a></div>
+        <code>                    <abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null
+    <strong>getPromise</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieve the pending request promise.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatchRequestSendingEvent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1280">at line 1280</a></div>
+        <code>            protected        void
+    <strong>dispatchRequestSendingEvent</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dispatch the RequestSending event if a dispatcher is available.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatchResponseReceivedEvent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1293">at line 1293</a></div>
+        <code>            protected        void
+    <strong>dispatchResponseReceivedEvent</strong>(<a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a> $response)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dispatch the ResponseReceived event if a dispatcher is available.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Client/Response.html"><abbr title="Illuminate\Http\Client\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatchConnectionFailedEvent">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1308">at line 1308</a></div>
+        <code>            protected        void
+    <strong>dispatchConnectionFailedEvent</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Dispatch the ConnectionFailed event if a dispatcher is available.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClient">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1321">at line 1321</a></div>
+        <code>                    $this
+    <strong>setClient</strong>(<abbr title="GuzzleHttp\Client">Client</abbr> $client)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the client instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="GuzzleHttp\Client">Client</abbr></td>
+                <td>$client</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHandler">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1334">at line 1334</a></div>
+        <code>                    $this
+    <strong>setHandler</strong>(callable $handler)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new client instance using the given handler.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/9.x/src/Illuminate/Http/Client/PendingRequest.php#L1346">at line 1346</a></div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the pending request options.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

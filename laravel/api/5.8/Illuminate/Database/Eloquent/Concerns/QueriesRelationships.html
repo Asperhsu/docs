@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Database\Eloquent\Concerns\QueriesRelationships | Laravel API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+        <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.5/opensearch.xml"
+          title="Laravel API (5.5)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/5.8/opensearch.xml"
+          title="Laravel API (5.8)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/6.x/opensearch.xml"
+          title="Laravel API (6.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/7.x/opensearch.xml"
+          title="Laravel API (7.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/8.x/opensearch.xml"
+          title="Laravel API (8.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/9.x/opensearch.xml"
+          title="Laravel API (9.x)" />
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://docs.asper.one/laravel/api/master/opensearch.xml"
+          title="Laravel API (master)" />
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Database_Eloquent_Concerns_QueriesRelationships" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select class="form-control" id="version-switcher" name="version">
+                                            <option
+                            value="../../../../../5.5/index.html"
+                            data-version="5.5" >Laravel 5.5</option>
+                                            <option
+                            value="../../../../../5.8/index.html"
+                            data-version="5.8" selected>Laravel 5.8</option>
+                                            <option
+                            value="../../../../../6.x/index.html"
+                            data-version="6.x" >Laravel 6.x</option>
+                                            <option
+                            value="../../../../../7.x/index.html"
+                            data-version="7.x" >Laravel 7.x</option>
+                                            <option
+                            value="../../../../../8.x/index.html"
+                            data-version="8.x" >Laravel 8.x</option>
+                                            <option
+                            value="../../../../../9.x/index.html"
+                            data-version="9.x" >Laravel 9.x</option>
+                                            <option
+                            value="../../../../../master/index.html"
+                            data-version="master" >Laravel Dev</option>
+                                    </select>
+            </form>
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Laravel API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                                        <li role="presentation" class="dropdown visible-xs-block visible-sm-block">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">Versions&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li ><a href="../../../../../5.5/index.html" data-version="5.5">Laravel 5.5</a></li>
+                        <li class="active"><a href="../../../../../5.8/index.html" data-version="5.8">Laravel 5.8</a></li>
+                        <li ><a href="../../../../../6.x/index.html" data-version="6.x">Laravel 6.x</a></li>
+                        <li ><a href="../../../../../7.x/index.html" data-version="7.x">Laravel 7.x</a></li>
+                        <li ><a href="../../../../../8.x/index.html" data-version="8.x">Laravel 8.x</a></li>
+                        <li ><a href="../../../../../9.x/index.html" data-version="9.x">Laravel 9.x</a></li>
+                        <li ><a href="../../../../../master/index.html" data-version="master">Laravel Dev</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../Illuminate.html">Illuminate</a></li><li class="backslash">\</li><li><a href="../../../../Illuminate/Database.html">Database</a></li><li class="backslash">\</li><li><a href="../../../../Illuminate/Database/Eloquent.html">Eloquent</a></li><li class="backslash">\</li><li><a href="../../../../Illuminate/Database/Eloquent/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>QueriesRelationships</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>QueriesRelationships    
+            </h1>
+    </div>
+
+    
+    <p>        trait
+    <strong>QueriesRelationships</strong>        (<a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_has">has</a>(string|<a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a> $relation, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a relationship count / exists condition to the query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasNested">hasNested</a>(string $relations, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $callback = null)
+        
+                                            <p><p>Add nested relationship count / exists conditions to the query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orHas">orHas</a>(string $relation, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        
+                                            <p><p>Add a relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doesntHave">doesntHave</a>(string $relation, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a relationship count / exists condition to the query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orDoesntHave">orDoesntHave</a>(string $relation)
+        
+                                            <p><p>Add a relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_whereHas">whereHas</a>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        
+                                            <p><p>Add a relationship count / exists condition to the query with where clauses.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orWhereHas">orWhereHas</a>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        
+                                            <p><p>Add a relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_whereDoesntHave">whereDoesntHave</a>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a relationship count / exists condition to the query with where clauses.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orWhereDoesntHave">orWhereDoesntHave</a>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasMorph">hasMorph</a>(string $relation, string|array $types, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Relations/BelongsTo.html"><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBelongsToRelation">getBelongsToRelation</a>(<a href="../../../../Illuminate/Database/Eloquent/Relations/MorphTo.html"><abbr title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</abbr></a> $relation, string $type)
+        
+                                            <p><p>Get the BelongsTo relationship for a single polymorphic type.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orHasMorph">orHasMorph</a>(string $relation, string|array $types, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doesntHaveMorph">doesntHaveMorph</a>(string $relation, string|array $types, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orDoesntHaveMorph">orDoesntHaveMorph</a>(string $relation, string|array $types)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_whereHasMorph">whereHasMorph</a>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orWhereHasMorph">orWhereHasMorph</a>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_whereDoesntHaveMorph">whereDoesntHaveMorph</a>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orWhereDoesntHaveMorph">orWhereDoesntHaveMorph</a>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        
+                                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withCount">withCount</a>(mixed $relations)
+        
+                                            <p><p>Add subselect queries to count the relations.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addHasWhere">addHasWhere</a>(<a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a> $hasQuery, <a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a> $relation, string $operator, int $count, string $boolean)
+        
+                                            <p><p>Add the &quot;has&quot; condition where clause to the query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeConstraintsFrom">mergeConstraintsFrom</a>(<a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a> $from)
+        
+                                            <p><p>Merge the where constraints from another query to the current query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addWhereCountQuery">addWhereCountQuery</a>(<a href="../../../../Illuminate/Database/Query/Builder.html"><abbr title="Illuminate\Database\Query\Builder">Builder</abbr></a> $query, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;)
+        
+                                            <p><p>Add a sub-query count clause to this query.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRelationWithoutConstraints">getRelationWithoutConstraints</a>(string $relation)
+        
+                                            <p><p>Get the &quot;has relation&quot; base query instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_canUseExistsForExistenceCheck">canUseExistsForExistenceCheck</a>(string $operator, int $count)
+        
+                                            <p><p>Check if we can run an &quot;exists&quot; query to optimize performance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_has">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L26">at line 26</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>has</strong>(string|<a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a> $relation, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a></td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNested">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L75">at line 75</a></div>
+        <code>            protected        <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>hasNested</strong>(string $relations, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add nested relationship count / exists conditions to the query.</p></p>                <p><p>Sets up recursive call to whereHas until we finish the nested relation.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relations</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orHas">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L106">at line 106</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orHas</strong>(string $relation, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doesntHave">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L119">at line 119</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>doesntHave</strong>(string $relation, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orDoesntHave">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L130">at line 130</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orDoesntHave</strong>(string $relation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereHas">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L144">at line 144</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>whereHas</strong>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query with where clauses.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereHas">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L158">at line 158</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orWhereHas</strong>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereDoesntHave">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L170">at line 170</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>whereDoesntHave</strong>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query with where clauses.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereDoesntHave">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L182">at line 182</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orWhereDoesntHave</strong>(string $relation, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L198">at line 198</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>hasMorph</strong>(string $relation, string|array $types, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBelongsToRelation">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L237">at line 237</a></div>
+        <code>            protected        <a href="../../../../Illuminate/Database/Eloquent/Relations/BelongsTo.html"><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></a>
+    <strong>getBelongsToRelation</strong>(<a href="../../../../Illuminate/Database/Eloquent/Relations/MorphTo.html"><abbr title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</abbr></a> $relation, string $type)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the BelongsTo relationship for a single polymorphic type.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Illuminate/Database/Eloquent/Relations/MorphTo.html"><abbr title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</abbr></a></td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Relations/BelongsTo.html"><abbr title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orHasMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L261">at line 261</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orHasMorph</strong>(string $relation, string|array $types, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doesntHaveMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L275">at line 275</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>doesntHaveMorph</strong>(string $relation, string|array $types, string $boolean = &#039;and&#039;, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orDoesntHaveMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L287">at line 287</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orDoesntHaveMorph</strong>(string $relation, string|array $types)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query with an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereHasMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L302">at line 302</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>whereHasMorph</strong>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereHasMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L317">at line 317</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orWhereHasMorph</strong>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null, string $operator = &#039;&gt;=&#039;, int $count = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereDoesntHaveMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L330">at line 330</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>whereDoesntHaveMorph</strong>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereDoesntHaveMorph">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L343">at line 343</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>orWhereDoesntHaveMorph</strong>(string $relation, string|array $types, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a polymorphic relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$types</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withCount">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L354">at line 354</a></div>
+        <code>                    $this
+    <strong>withCount</strong>(mixed $relations)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add subselect queries to count the relations.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$relations</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHasWhere">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L416">at line 416</a></div>
+        <code>            protected        <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>addHasWhere</strong>(<a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a> $hasQuery, <a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a> $relation, string $operator, int $count, string $boolean)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add the &quot;has&quot; condition where clause to the query.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a></td>
+                <td>$hasQuery</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a></td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeConstraintsFrom">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L431">at line 431</a></div>
+        <code>                    <a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a>
+    <strong>mergeConstraintsFrom</strong>(<a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a> $from)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Merge the where constraints from another query to the current query.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a></td>
+                <td>$from</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Builder.html"><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></a>|<a href="../../../../Illuminate/Database/Eloquent/Concerns/QueriesRelationships.html"><abbr title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addWhereCountQuery">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L454">at line 454</a></div>
+        <code>            protected        $this
+    <strong>addWhereCountQuery</strong>(<a href="../../../../Illuminate/Database/Query/Builder.html"><abbr title="Illuminate\Database\Query\Builder">Builder</abbr></a> $query, string $operator = &#039;&gt;=&#039;, int $count = 1, string $boolean = &#039;and&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a sub-query count clause to this query.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Illuminate/Database/Query/Builder.html"><abbr title="Illuminate\Database\Query\Builder">Builder</abbr></a></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelationWithoutConstraints">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L472">at line 472</a></div>
+        <code>            protected        <a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a>
+    <strong>getRelationWithoutConstraints</strong>(string $relation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the &quot;has relation&quot; base query instance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Illuminate/Database/Eloquent/Relations/Relation.html"><abbr title="Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canUseExistsForExistenceCheck">
+        <div class="location"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php#L486">at line 486</a></div>
+        <code>            protected        bool
+    <strong>canUseExistsForExistenceCheck</strong>(string $operator, int $count)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check if we can run an &quot;exists&quot; query to optimize performance.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
